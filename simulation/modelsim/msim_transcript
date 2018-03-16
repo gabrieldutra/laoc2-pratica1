@@ -1,0 +1,58 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/Pratica1 {E:/Pratica1/ramlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramlpm
+# 
+# Top level modules:
+# 	ramlpm
+# vlog -vlog01compat -work work +incdir+E:/Pratica1 {E:/Pratica1/pratica1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica1
+# 
+# Top level modules:
+# 	pratica1
+# 
+vsim work.pratica1
+# vsim work.pratica1 
+# Loading work.pratica1
+# Loading work.ramlpm
+# ** Error: (vsim-3033) E:/Pratica1/ramlpm.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /pratica1/ram
+#         Searched libraries:
+#             E:/Pratica1/simulation/modelsim/rtl_work
+# Error loading design
+vsim -L altera_mf_ver work.pratica1
+# vsim -L altera_mf_ver work.pratica1 
+# Loading work.pratica1
+# Loading work.ramlpm
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/pratica1/clock
+add wave -position end  sim:/pratica1/address
+wave create -pattern constant -value 00001 -range 4 0 -starttime 0ps -endtime 1000ps sim:/pratica1/address
+wave create -pattern counter -startvalue 00000000 -endvalue 11111111 -type Range -direction Up -period 500ps -step 1 -repeat forever -range 7 0 -starttime 0ps -endtime 1000ps sim:/pratica1/data
+wave create -pattern clock -initialvalue HiZ -period 250ps -dutycycle 50 -starttime 50ps -endtime 1000ps sim:/pratica1/wren
+add wave -position end  sim:/pratica1/q
+run -all
+# Break key hit 
+run
+run -continue
+# 
+# Internal Error: In tclprim_ApplyStimulus for /pratica1/clock "Time value must be greater than "now": 1000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/Pratica1/simulation/modelsim/wave.do
+wave editwrite -file E:/Pratica1/simulation/modelsim/wave.do -append

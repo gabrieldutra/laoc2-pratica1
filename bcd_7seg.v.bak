@@ -1,0 +1,38 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    21:13:16 10/22/2015 
+// Design Name: 
+// Module Name:    temporizador 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module bcd_7seg(			input				[3:0]		BCD,
+								output	reg	[7:0]		SSEG_CA		);
+always
+case(BCD) 
+      4'd0 : SSEG_CA = 7'b01000000;
+      4'd1 : SSEG_CA = 7'b01111001;
+      4'd2 : SSEG_CA = 7'b00100100;
+      4'd3 : SSEG_CA = 7'b00110000;
+      4'd4 : SSEG_CA = 7'b00011001;
+      4'd5 : SSEG_CA = 7'b00010010;
+      4'd6 : SSEG_CA = 7'b01000010;
+      4'd7 : SSEG_CA = 7'b01111000;		
+		4'd8 : SSEG_CA = 7'b00000000;
+		4'd9 : SSEG_CA = 7'b00010000;
+		4'd10: SSEG_CA = 7'b11000000;
+endcase 
+
+endmodule
