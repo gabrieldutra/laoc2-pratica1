@@ -1,124 +1,33 @@
-# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
 # do pratica1_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/aluno/laoc2-pratica1 {C:/Users/aluno/laoc2-pratica1/ramlpm.v}
+# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/ramlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ramlpm
 # 
 # Top level modules:
 # 	ramlpm
-# vlog -vlog01compat -work work +incdir+C:/Users/aluno/laoc2-pratica1 {C:/Users/aluno/laoc2-pratica1/pratica1.v}
+# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/pratica1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module pratica1
 # 
 # Top level modules:
 # 	pratica1
-# vlog -vlog01compat -work work +incdir+C:/Users/aluno/laoc2-pratica1 {C:/Users/aluno/laoc2-pratica1/bcd_7seg.v}
+# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/bcd_7seg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bcd_7seg
 # 
 # Top level modules:
 # 	bcd_7seg
 # 
-vsim work.pratica1
-# vsim work.pratica1 
-# Loading work.pratica1
-# Loading work.bcd_7seg
-# Loading work.ramlpm
-# ** Error: (vsim-3033) C:/Users/aluno/laoc2-pratica1/ramlpm.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# ** Note: (vish-4074) File E:/laoc2-pratica1/simulation/modelsim/vsim.wlf is still open, viewing file in live viewing mode.
 # 
-#         Region: /pratica1/ram
-#         Searched libraries:
-#             C:/Users/aluno/laoc2-pratica1/simulation/modelsim/rtl_work
-# Error loading design
-vsim work.ramlpm
-# vsim work.ramlpm 
-# Loading work.ramlpm
-# ** Error: (vsim-3033) C:/Users/aluno/laoc2-pratica1/ramlpm.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
-# 
-#         Region: /ramlpm
-#         Searched libraries:
-#             C:/Users/aluno/laoc2-pratica1/simulation/modelsim/rtl_work
-# Error loading design
-vsim -L altera_mf work.ramlpm
-# vsim -L altera_mf work.ramlpm 
-# Loading work.ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(87): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_input_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(88): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.clock_enable_output_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(89): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.init_file.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(90): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.intended_device_family.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(91): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_hint.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(92): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.lpm_type.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(93): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.numwords_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(94): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.operation_mode.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(95): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_aclr_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(96): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.outdata_reg_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(97): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.power_up_uninitialized.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(98): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.ram_block_type.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(99): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.widthad_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(100): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_a.
-# 
-#         Region: /ramlpm
-# ** Error: (vsim-10000) C:/Users/aluno/laoc2-pratica1/ramlpm.v(101): Unresolved defparam reference to 'altsyncram_component' in altsyncram_component.width_byteena_a.
-# 
-#         Region: /ramlpm
-# Error loading design
-vsim -L altera_mf_ver work.ramlpm
-# vsim -L altera_mf_ver work.ramlpm 
-# Loading work.ramlpm
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-add wave -position insertpoint  \
-sim:/ramlpm/address
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 200ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/ramlpm/clock
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 200ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/ramlpm/clock
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 500ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/ramlpm/wren
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 100ps -endtime 2000ps sim:/ramlpm/wren
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 100ps -endtime 2000ps sim:/ramlpm/wren
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 400ps -dutycycle 50 -starttime 50ps -endtime 2000ps sim:/ramlpm/wren
-wave create -driver freeze -pattern counter -startvalue 00000 -endvalue 000001 -type Range -direction Up -period 1000ps -step 1 -repeat forever -range 4 0 -starttime 0ps -endtime 2000ps sim:/ramlpm/address
-wave create -driver freeze -pattern counter -startvalue 00000 -endvalue 000001 -type Range -direction Up -period 600ps -step 1 -repeat forever -range 4 0 -starttime 0ps -endtime 2000ps sim:/ramlpm/address
-wave create -driver freeze -pattern counter -startvalue 00000 -endvalue 00001 -type Range -direction Up -period 1150ps -step 1 -repeat forever -range 4 0 -starttime 0ps -endtime 2000ps sim:/ramlpm/address
-wave create -driver freeze -pattern random -initialvalue zzzzzzzz -period 200ps -random_type Uniform -seed 5 -range 7 0 -starttime 0ps -endtime 2000ps sim:/ramlpm/data
-add wave -position end  sim:/ramlpm/q
-run -all
-# ** Warning: (vsim-PLI-3412) Memory address read on line 65 of file "mif.ver" is out of bounds specified for readmem command.  (Current address [32], address range [0:31])    : C:/altera/13.0/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v(45501)
-#    Time: 0 ps  Iteration: 0  Instance: /ramlpm/altsyncram_component
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/aluno/laoc2-pratica1/simulation/modelsim/nomif.do
-wave editwrite -file C:/Users/aluno/laoc2-pratica1/simulation/modelsim/nomif.do -append

@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "pratica1")
-  (DATE "03/23/2018 12:21:22")
+  (DATE "03/23/2018 13:17:08")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
@@ -732,7 +732,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr6\~0)
+    (INSTANCE bcd\|WideOr6\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2457:2457:2457) (2457:2457:2457))
@@ -748,7 +748,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr5\~0)
+    (INSTANCE bcd\|WideOr5\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2458:2458:2458) (2458:2458:2458))
@@ -764,7 +764,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr4\~0)
+    (INSTANCE bcd\|WideOr4\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2458:2458:2458) (2458:2458:2458))
@@ -780,7 +780,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr3\~0)
+    (INSTANCE bcd\|WideOr3\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2458:2458:2458) (2458:2458:2458))
@@ -796,7 +796,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr2\~0)
+    (INSTANCE bcd\|WideOr2\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2450:2450:2450) (2450:2450:2450))
@@ -812,7 +812,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr1\~0)
+    (INSTANCE bcd\|WideOr1\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2455:2455:2455) (2455:2455:2455))
@@ -828,7 +828,7 @@
   )
   (CELL
     (CELLTYPE "cycloneii_lcell_comb")
-    (INSTANCE bcd2\|WideOr0\~0)
+    (INSTANCE bcd\|WideOr0\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (2454:2454:2454) (2454:2454:2454))
