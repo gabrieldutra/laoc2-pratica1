@@ -2,44 +2,64 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\Pratica1\simulation\modelsim
-vpratica1
+Z0 dC:\Users\aluno\laoc2-pratica1\simulation\modelsim
+vbcd_7seg
 !i10b 1
-!s100 C8Ln?fT2zaNZeZ<DzLimE3
-ISlOhaB7M08N=Ro9=3ZzD?1
-V;GdT?8hIQ6[UWE;nK`BTV1
-Z1 dE:\Pratica1\simulation\modelsim
-w1520613402
-8E:/Pratica1/pratica1.v
-FE:/Pratica1/pratica1.v
-L0 1
+!s100 9?k@:>4PVITBEjgZ0<>UB3
+I<PDnYSPcm0BNgHC5OCTK@1
+VR>`DTFlnd=5J_^18KkNc[2
+Z1 dC:\Users\aluno\laoc2-pratica1\simulation\modelsim
+w1521814354
+8C:/Users/aluno/laoc2-pratica1/bcd_7seg.v
+FC:/Users/aluno/laoc2-pratica1/bcd_7seg.v
+L0 21
 Z2 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1520613484.232000
-!s107 E:/Pratica1/pratica1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Pratica1|E:/Pratica1/pratica1.v|
+!s108 1521818045.637000
+!s107 C:/Users/aluno/laoc2-pratica1/bcd_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/bcd_7seg.v|
 !s101 -O0
 Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+E:/Pratica1 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/aluno/laoc2-pratica1 -O0
+vpratica1
+I1m51o7^1Ieh<HloC_2kEQ1
+VEfU<E6kZS0MThj0cgNLU?0
+R1
+w1521814355
+8C:/Users/aluno/laoc2-pratica1/pratica1.v
+FC:/Users/aluno/laoc2-pratica1/pratica1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 5:=9NLknNa7GO5mh^ngo90
+!s85 0
+!s108 1521818045.514000
+!s107 C:/Users/aluno/laoc2-pratica1/pratica1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/pratica1.v|
+!s101 -O0
 vramlpm
-IRoW<b<?jm^@Fo[g33C_P@3
+IVhc06gfoHnC7W=Zn30P@f3
 VR:=61PRUnAZWihg=S@JO<2
 R1
-w1520611308
-8E:/Pratica1/ramlpm.v
-FE:/Pratica1/ramlpm.v
+w1521816469
+8C:/Users/aluno/laoc2-pratica1/ramlpm.v
+FC:/Users/aluno/laoc2-pratica1/ramlpm.v
 L0 39
 R2
 r1
 31
 R3
-!i10b 1
-!s100 3VT27RUj1C_[mW@G<1Jfi3
-!s85 0
-!s108 1520613484.076000
-!s107 E:/Pratica1/ramlpm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Pratica1|E:/Pratica1/ramlpm.v|
-!s101 -O0
 R4
+!i10b 1
+!s100 LYnCL9^<encERV7nih3dK3
+!s85 0
+!s108 1521818045.353000
+!s107 C:/Users/aluno/laoc2-pratica1/ramlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/ramlpm.v|
+!s101 -O0

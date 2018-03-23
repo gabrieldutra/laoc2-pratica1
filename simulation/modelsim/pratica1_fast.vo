@@ -13,10 +13,10 @@
 // applicable agreement for further details.
 
 // VENDOR "Altera"
-// PROGRAM "Quartus II 32-bit"
-// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
 
-// DATE "03/16/2018 13:41:28"
+// DATE "03/23/2018 12:12:32"
 
 // 
 // Device: Altera EP2C35F672C6 Package FBGA672
@@ -176,8 +176,8 @@ wire \bcd2|WideOr3~0_combout ;
 wire \bcd2|WideOr2~0_combout ;
 wire \bcd2|WideOr1~0_combout ;
 wire \bcd2|WideOr0~0_combout ;
-wire [7:0] \ram|altsyncram_component|auto_generated|q_a ;
 wire [17:0] \SW~combout ;
+wire [7:0] \ram|altsyncram_component|auto_generated|q_a ;
 
 wire [7:0] \ram|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
 
@@ -732,7 +732,9 @@ cycloneii_ram_block \ram|altsyncram_component|auto_generated|ram_block1a0 (
 // synopsys translate_off
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ramlpm:ram|altsyncram:altsyncram_component|altsyncram_dlc1:auto_generated|ALTSYNCRAM";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .init_file = "mif.mif";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|ALTSYNCRAM";
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "single_port";
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 5;
@@ -752,6 +754,7 @@ defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_w
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 8;
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M4K";
 defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .safe_write = "err_on_2clk";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 256'h0000000000000000000000000000000000000000000000000000000000000000;
 // synopsys translate_on
 
 // Location: LCCOMB_X27_Y4_N12

@@ -484,5 +484,5 @@ set_global_assignment -name SEARCH_PATH altera_mf.altera_mf_components.all
 set_global_assignment -name SEARCH_PATH altera_mf
 set_global_assignment -name VERILOG_FILE bcd.v
 set_global_assignment -name VERILOG_FILE bcd_7seg.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name MIF_FILE mif.mif
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
