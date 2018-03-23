@@ -28,5 +28,12 @@
 		ramlpm ram(SW[4:0], SW[6], SW[17:10], SW[5], q);
 		bcd_7seg bcd5(q[3:0], HEX0[0:6]);
 		bcd_7seg bcd6(q[7:4], HEX1[0:6]);
+		
+		/*
+		*	SW[6] -> clock
+		*	SW[5] -> toggle W/R
+		*	SW[4:0] -> memory address
+		*	SW[17:10] -> value
+		*/
 	
 	endmodule
