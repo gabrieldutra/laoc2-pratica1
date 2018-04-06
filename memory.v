@@ -166,6 +166,7 @@ module memory (
 								cache[writeAddress][15:15] = 1'b1; // Dirty
 								cache[writeAddress][12:8] = currentAddress;
 								cache[writeAddress][7:0] = currentData;
+								outputData = currentData;
 								outputValid = 1;
 								// Update LRU
 								if (cache[writeAddress][14:13] > cache[1][14:13]) 
@@ -177,12 +178,14 @@ module memory (
 								cache[writeAddress][14:13] = 2'b00;
 							end
 							else begin // Leitura no caso de miss
-								if (memCount == 2'b11) // Clock - Leitura 
+								if (memCount == 2'b10) // Clock - Leitura 
 									begin
 										cache[writeAddress][16:16] = 1'b1; // Valid
 										cache[writeAddress][15:15] = 1'b0; // Dirty
 										cache[writeAddress][12:8] = currentAddress;
 										cache[writeAddress][7:0] = memOutput;
+										outputData = memOutput;
+										outputValid = 1;
 										// Update LRU
 										if (cache[writeAddress][14:13] > cache[1][14:13]) 
 											cache[1][14:13] = cache[1][14:13] + 2'b01;

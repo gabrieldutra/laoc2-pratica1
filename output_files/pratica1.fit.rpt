@@ -1,6 +1,6 @@
 Fitter report for pratica1
-Fri Apr 06 16:31:45 2018
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Apr 06 17:02:24 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -61,26 +61,26 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Fitter Summary                                                                       ;
-+------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 06 16:31:45 2018           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; pratica1                                        ;
-; Top-level Entity Name              ; pratica1                                        ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C35F672C6                                    ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 406 / 33,216 ( 1 % )                            ;
-;     Total combinational functions  ; 396 / 33,216 ( 1 % )                            ;
-;     Dedicated logic registers      ; 106 / 33,216 ( < 1 % )                          ;
-; Total registers                    ; 106                                             ;
-; Total pins                         ; 75 / 475 ( 16 % )                               ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 256 / 483,840 ( < 1 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Fitter Summary                                                                  ;
++------------------------------------+--------------------------------------------+
+; Fitter Status                      ; Successful - Fri Apr 06 17:02:24 2018      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; pratica1                                   ;
+; Top-level Entity Name              ; pratica1                                   ;
+; Family                             ; Cyclone II                                 ;
+; Device                             ; EP2C35F672C6                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 414 / 33,216 ( 1 % )                       ;
+;     Total combinational functions  ; 406 / 33,216 ( 1 % )                       ;
+;     Dedicated logic registers      ; 106 / 33,216 ( < 1 % )                     ;
+; Total registers                    ; 106                                        ;
+; Total pins                         ; 75 / 475 ( 16 % )                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 256 / 483,840 ( < 1 % )                    ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -509,8 +509,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 590 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 590 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 600 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 600 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -533,7 +533,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 587     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 597     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -541,7 +541,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_files/pratica1.pin.
+The pin-out file can be found in C:/Users/aluno/laoc2-pratica1/output_files/pratica1.pin.
 
 
 +-------------------------------------------------------------------------+
@@ -549,26 +549,26 @@ The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 406 / 33,216 ( 1 % )      ;
-;     -- Combinational with no register       ; 300                       ;
-;     -- Register only                        ; 10                        ;
-;     -- Combinational with a register        ; 96                        ;
+; Total logic elements                        ; 414 / 33,216 ( 1 % )      ;
+;     -- Combinational with no register       ; 308                       ;
+;     -- Register only                        ; 8                         ;
+;     -- Combinational with a register        ; 98                        ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 296                       ;
-;     -- 3 input functions                    ; 77                        ;
-;     -- <=2 input functions                  ; 23                        ;
-;     -- Register only                        ; 10                        ;
+;     -- 4 input functions                    ; 289                       ;
+;     -- 3 input functions                    ; 96                        ;
+;     -- <=2 input functions                  ; 21                        ;
+;     -- Register only                        ; 8                         ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 396                       ;
+;     -- normal mode                          ; 406                       ;
 ;     -- arithmetic mode                      ; 0                         ;
 ;                                             ;                           ;
 ; Total registers*                            ; 106 / 34,593 ( < 1 % )    ;
 ;     -- Dedicated logic registers            ; 106 / 33,216 ( < 1 % )    ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )         ;
 ;                                             ;                           ;
-; Total LABs:  partially or completely used   ; 32 / 2,076 ( 2 % )        ;
+; Total LABs:  partially or completely used   ; 31 / 2,076 ( 1 % )        ;
 ; Virtual pins                                ; 0                         ;
 ; I/O pins                                    ; 75 / 475 ( 16 % )         ;
 ;     -- Clock pins                           ; 8 / 8 ( 100 % )           ;
@@ -584,11 +584,11 @@ The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )             ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%              ;
-; Peak interconnect usage (total/H/V)         ; 5% / 6% / 4%              ;
+; Peak interconnect usage (total/H/V)         ; 8% / 7% / 8%              ;
 ; Maximum fan-out                             ; 107                       ;
-; Highest non-global fan-out                  ; 45                        ;
-; Total fan-out                               ; 1829                      ;
-; Average fan-out                             ; 3.09                      ;
+; Highest non-global fan-out                  ; 51                        ;
+; Total fan-out                               ; 1868                      ;
+; Average fan-out                             ; 3.12                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -601,25 +601,25 @@ The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 406 / 33216 ( 1 % )   ; 0 / 33216 ( 0 % )              ;
-;     -- Combinational with no register       ; 300                   ; 0                              ;
-;     -- Register only                        ; 10                    ; 0                              ;
-;     -- Combinational with a register        ; 96                    ; 0                              ;
+; Total logic elements                        ; 414 / 33216 ( 1 % )   ; 0 / 33216 ( 0 % )              ;
+;     -- Combinational with no register       ; 308                   ; 0                              ;
+;     -- Register only                        ; 8                     ; 0                              ;
+;     -- Combinational with a register        ; 98                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 296                   ; 0                              ;
-;     -- 3 input functions                    ; 77                    ; 0                              ;
-;     -- <=2 input functions                  ; 23                    ; 0                              ;
-;     -- Register only                        ; 10                    ; 0                              ;
+;     -- 4 input functions                    ; 289                   ; 0                              ;
+;     -- 3 input functions                    ; 96                    ; 0                              ;
+;     -- <=2 input functions                  ; 21                    ; 0                              ;
+;     -- Register only                        ; 8                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 396                   ; 0                              ;
+;     -- normal mode                          ; 406                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 106                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 106 / 33216 ( < 1 % ) ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 32 / 2076 ( 2 % )     ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 31 / 2076 ( 1 % )     ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 75                    ; 0                              ;
@@ -636,8 +636,8 @@ The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 1829                  ; 0                              ;
-;     -- Registered Connections               ; 259                   ; 0                              ;
+;     -- Total Connections                    ; 1868                  ; 0                              ;
+;     -- Registered Connections               ; 260                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -682,7 +682,7 @@ The pin-out file can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_
 ; SW[2]  ; P25   ; 6        ; 65           ; 19           ; 2           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[3]  ; AE14  ; 7        ; 33           ; 0            ; 0           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[4]  ; AF14  ; 7        ; 33           ; 0            ; 1           ; 7                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; SW[5]  ; AD13  ; 8        ; 33           ; 0            ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; SW[5]  ; AD13  ; 8        ; 33           ; 0            ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[6]  ; AC13  ; 8        ; 33           ; 0            ; 3           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[7]  ; C13   ; 3        ; 31           ; 36           ; 2           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; SW[8]  ; B13   ; 4        ; 31           ; 36           ; 0           ; 0                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -1494,16 +1494,16 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                               ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------+--------------+
-; |pratica1                                    ; 406 (0)     ; 106 (0)                   ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 75   ; 0            ; 300 (0)      ; 10 (0)            ; 96 (0)           ; |pratica1                                                                                         ; work         ;
-;    |bcd_7seg:bcd3|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd3                                                                           ; work         ;
-;    |bcd_7seg:bcd4|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd4                                                                           ; work         ;
-;    |bcd_7seg:bcd5|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd5                                                                           ; work         ;
-;    |bcd_7seg:bcd6|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd6                                                                           ; work         ;
-;    |bcd_7seg:bcd|                            ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd                                                                            ; work         ;
-;    |memory:memory|                           ; 371 (371)   ; 106 (106)                 ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 265 (265)    ; 10 (10)           ; 96 (96)          ; |pratica1|memory:memory                                                                           ; work         ;
-;       |ramlpm:ram|                           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram                                                                ; work         ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_7de1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated ; work         ;
+; |pratica1                                    ; 414 (0)     ; 106 (0)                   ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 75   ; 0            ; 308 (0)      ; 8 (0)             ; 98 (0)           ; |pratica1                                                                                         ;              ;
+;    |bcd_7seg:bcd3|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd3                                                                           ;              ;
+;    |bcd_7seg:bcd4|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd4                                                                           ;              ;
+;    |bcd_7seg:bcd5|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd5                                                                           ;              ;
+;    |bcd_7seg:bcd6|                           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd6                                                                           ;              ;
+;    |bcd_7seg:bcd|                            ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |pratica1|bcd_7seg:bcd                                                                            ;              ;
+;    |memory:memory|                           ; 379 (379)   ; 106 (106)                 ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 273 (273)    ; 8 (8)             ; 98 (98)          ; |pratica1|memory:memory                                                                           ;              ;
+;       |ramlpm:ram|                           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram                                                                ;              ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component                                ;              ;
+;             |altsyncram_7de1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 256         ; 1    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated ;              ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1611,34 +1611,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - bcd_7seg:bcd3|WideOr2~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd3|WideOr1~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd3|WideOr0~0     ; 1                 ; 6       ;
-;      - memory:memory|outputData~14 ; 1                 ; 6       ;
-;      - memory:memory|cache~139     ; 1                 ; 6       ;
-;      - memory:memory|cache~140     ; 1                 ; 6       ;
 ;      - memory:memory|currentData~3 ; 1                 ; 6       ;
-;      - memory:memory|cache~142     ; 1                 ; 6       ;
-;      - memory:memory|cache~143     ; 1                 ; 6       ;
-;      - memory:memory|cache~145     ; 1                 ; 6       ;
-;      - memory:memory|cache~146     ; 1                 ; 6       ;
-;      - memory:memory|cache~148     ; 1                 ; 6       ;
-;      - memory:memory|cache~149     ; 1                 ; 6       ;
+;      - memory:memory|outputData~26 ; 1                 ; 6       ;
+;      - memory:memory|cache~154     ; 1                 ; 6       ;
+;      - memory:memory|cache~155     ; 1                 ; 6       ;
+;      - memory:memory|cache~157     ; 1                 ; 6       ;
+;      - memory:memory|cache~158     ; 1                 ; 6       ;
+;      - memory:memory|cache~160     ; 1                 ; 6       ;
+;      - memory:memory|cache~161     ; 1                 ; 6       ;
+;      - memory:memory|cache~163     ; 1                 ; 6       ;
+;      - memory:memory|cache~164     ; 1                 ; 6       ;
 ; SW[14]                             ;                   ;         ;
-;      - bcd_7seg:bcd4|WideOr6~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr5~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr4~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr3~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr6~0     ; 0                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr5~0     ; 0                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr4~0     ; 0                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr3~0     ; 0                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr2~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr1~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr0~0     ; 1                 ; 6       ;
-;      - memory:memory|outputData~17 ; 0                 ; 6       ;
-;      - memory:memory|cache~151     ; 0                 ; 6       ;
-;      - memory:memory|cache~152     ; 0                 ; 6       ;
 ;      - memory:memory|currentData~4 ; 0                 ; 6       ;
-;      - memory:memory|cache~154     ; 0                 ; 6       ;
-;      - memory:memory|cache~155     ; 0                 ; 6       ;
-;      - memory:memory|cache~157     ; 0                 ; 6       ;
-;      - memory:memory|cache~158     ; 0                 ; 6       ;
-;      - memory:memory|cache~160     ; 0                 ; 6       ;
-;      - memory:memory|cache~161     ; 0                 ; 6       ;
+;      - memory:memory|outputData~29 ; 0                 ; 6       ;
+;      - memory:memory|cache~166     ; 0                 ; 6       ;
+;      - memory:memory|cache~167     ; 0                 ; 6       ;
+;      - memory:memory|cache~169     ; 0                 ; 6       ;
+;      - memory:memory|cache~170     ; 0                 ; 6       ;
+;      - memory:memory|cache~172     ; 0                 ; 6       ;
+;      - memory:memory|cache~173     ; 0                 ; 6       ;
+;      - memory:memory|cache~175     ; 0                 ; 6       ;
+;      - memory:memory|cache~176     ; 0                 ; 6       ;
 ; SW[15]                             ;                   ;         ;
 ;      - bcd_7seg:bcd4|WideOr6~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr5~0     ; 1                 ; 6       ;
@@ -1647,35 +1647,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - bcd_7seg:bcd4|WideOr2~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr1~0     ; 1                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr0~0     ; 1                 ; 6       ;
-;      - memory:memory|outputData~20 ; 1                 ; 6       ;
-;      - memory:memory|cache~163     ; 1                 ; 6       ;
-;      - memory:memory|cache~164     ; 1                 ; 6       ;
 ;      - memory:memory|currentData~5 ; 1                 ; 6       ;
-;      - memory:memory|cache~166     ; 1                 ; 6       ;
-;      - memory:memory|cache~167     ; 1                 ; 6       ;
-;      - memory:memory|cache~169     ; 1                 ; 6       ;
-;      - memory:memory|cache~170     ; 1                 ; 6       ;
-;      - memory:memory|cache~172     ; 1                 ; 6       ;
-;      - memory:memory|cache~173     ; 1                 ; 6       ;
-; SW[16]                             ;                   ;         ;
-;      - bcd_7seg:bcd4|WideOr6~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr5~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr4~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr3~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr2~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr1~0     ; 1                 ; 6       ;
-;      - bcd_7seg:bcd4|WideOr0~0     ; 1                 ; 6       ;
-;      - memory:memory|outputData~23 ; 1                 ; 6       ;
-;      - memory:memory|cache~175     ; 1                 ; 6       ;
-;      - memory:memory|cache~176     ; 1                 ; 6       ;
-;      - memory:memory|currentData~6 ; 1                 ; 6       ;
+;      - memory:memory|outputData~32 ; 1                 ; 6       ;
 ;      - memory:memory|cache~178     ; 1                 ; 6       ;
 ;      - memory:memory|cache~179     ; 1                 ; 6       ;
 ;      - memory:memory|cache~181     ; 1                 ; 6       ;
 ;      - memory:memory|cache~182     ; 1                 ; 6       ;
 ;      - memory:memory|cache~184     ; 1                 ; 6       ;
 ;      - memory:memory|cache~185     ; 1                 ; 6       ;
-; SW[17]                             ;                   ;         ;
+;      - memory:memory|cache~187     ; 1                 ; 6       ;
+;      - memory:memory|cache~188     ; 1                 ; 6       ;
+; SW[16]                             ;                   ;         ;
 ;      - bcd_7seg:bcd4|WideOr6~0     ; 0                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr5~0     ; 0                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr4~0     ; 0                 ; 6       ;
@@ -1683,16 +1665,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - bcd_7seg:bcd4|WideOr2~0     ; 0                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr1~0     ; 0                 ; 6       ;
 ;      - bcd_7seg:bcd4|WideOr0~0     ; 0                 ; 6       ;
-;      - memory:memory|outputData~26 ; 0                 ; 6       ;
-;      - memory:memory|cache~187     ; 0                 ; 6       ;
-;      - memory:memory|cache~188     ; 0                 ; 6       ;
-;      - memory:memory|currentData~7 ; 0                 ; 6       ;
+;      - memory:memory|currentData~6 ; 0                 ; 6       ;
+;      - memory:memory|outputData~35 ; 0                 ; 6       ;
 ;      - memory:memory|cache~190     ; 0                 ; 6       ;
 ;      - memory:memory|cache~191     ; 0                 ; 6       ;
 ;      - memory:memory|cache~193     ; 0                 ; 6       ;
 ;      - memory:memory|cache~194     ; 0                 ; 6       ;
 ;      - memory:memory|cache~196     ; 0                 ; 6       ;
 ;      - memory:memory|cache~197     ; 0                 ; 6       ;
+;      - memory:memory|cache~199     ; 0                 ; 6       ;
+;      - memory:memory|cache~200     ; 0                 ; 6       ;
+; SW[17]                             ;                   ;         ;
+;      - bcd_7seg:bcd4|WideOr6~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr5~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr4~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr3~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr2~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr1~0     ; 1                 ; 6       ;
+;      - bcd_7seg:bcd4|WideOr0~0     ; 1                 ; 6       ;
+;      - memory:memory|currentData~7 ; 1                 ; 6       ;
+;      - memory:memory|outputData~38 ; 1                 ; 6       ;
+;      - memory:memory|cache~202     ; 1                 ; 6       ;
+;      - memory:memory|cache~203     ; 1                 ; 6       ;
+;      - memory:memory|cache~205     ; 1                 ; 6       ;
+;      - memory:memory|cache~206     ; 1                 ; 6       ;
+;      - memory:memory|cache~208     ; 1                 ; 6       ;
+;      - memory:memory|cache~209     ; 1                 ; 6       ;
+;      - memory:memory|cache~211     ; 1                 ; 6       ;
+;      - memory:memory|cache~212     ; 1                 ; 6       ;
 ; SW[0]                              ;                   ;         ;
 ; SW[1]                              ;                   ;         ;
 ; SW[2]                              ;                   ;         ;
@@ -1708,19 +1708,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                           ; Location           ; Fan-Out ; Usage                    ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
 ; SW[6]                          ; PIN_AC13           ; 107     ; Clock                    ; yes    ; Global Clock         ; GCLK15           ; --                        ;
-; memory:memory|Mux0~1           ; LCCOMB_X19_Y14_N8  ; 42      ; Sync. load               ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[0][0]~111  ; LCCOMB_X17_Y14_N16 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[0][12]~233 ; LCCOMB_X21_Y14_N30 ; 5       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[1][6]~117  ; LCCOMB_X20_Y14_N2  ; 7       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[1][9]~84   ; LCCOMB_X22_Y14_N26 ; 6       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[2][0]~106  ; LCCOMB_X19_Y14_N30 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[2][12]~99  ; LCCOMB_X21_Y14_N24 ; 6       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[3][1]~94   ; LCCOMB_X19_Y13_N0  ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|cache[3][8]~97   ; LCCOMB_X21_Y14_N14 ; 5       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|memData[0]~26    ; LCCOMB_X17_Y13_N26 ; 13      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|memWren          ; LCFF_X19_Y14_N9    ; 6       ; Write enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|outputData[2]~5  ; LCCOMB_X17_Y14_N8  ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; memory:memory|outputValid~3    ; LCCOMB_X18_Y14_N16 ; 16      ; Clock enable, Sync. load ; no     ; --                   ; --               ; --                        ;
+; memory:memory|Mux0~1           ; LCCOMB_X14_Y15_N22 ; 44      ; Sync. load               ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[0][12]~84  ; LCCOMB_X17_Y14_N22 ; 5       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[0][2]~23   ; LCCOMB_X18_Y14_N26 ; 25      ; Clock enable, Sync. load ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[0][2]~83   ; LCCOMB_X14_Y15_N20 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[1][4]~138  ; LCCOMB_X15_Y15_N16 ; 7       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[1][9]~75   ; LCCOMB_X15_Y17_N10 ; 6       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[2][0]~96   ; LCCOMB_X12_Y15_N26 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[2][12]~88  ; LCCOMB_X18_Y16_N18 ; 6       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[3][1]~102  ; LCCOMB_X10_Y15_N30 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|cache[3][8]~86   ; LCCOMB_X15_Y14_N22 ; 5       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|memData[0]~3     ; LCCOMB_X14_Y14_N30 ; 13      ; Clock enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|memWren          ; LCFF_X14_Y15_N23   ; 6       ; Write enable             ; no     ; --                   ; --               ; --                        ;
+; memory:memory|outputData[2]~14 ; LCCOMB_X14_Y15_N8  ; 12      ; Sync. load               ; no     ; --                   ; --               ; --                        ;
+; memory:memory|outputData[2]~17 ; LCCOMB_X15_Y17_N30 ; 8       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
 +--------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1738,13 +1739,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                           ; Fan-Out ;
 +------------------------------------------------------------------------------------------------+---------+
-; memory:memory|currentWren~0                                                                    ; 45      ;
-; memory:memory|Mux0~1                                                                           ; 42      ;
-; memory:memory|writeAddress~6                                                                   ; 42      ;
-; memory:memory|writeAddress~5                                                                   ; 39      ;
-; memory:memory|cache[0][0]~90                                                                   ; 31      ;
-; memory:memory|always0~5                                                                        ; 25      ;
-; memory:memory|always0~3                                                                        ; 19      ;
+; memory:memory|currentWren~0                                                                    ; 51      ;
+; memory:memory|Mux0~1                                                                           ; 44      ;
+; memory:memory|writeAddress~5                                                                   ; 43      ;
+; memory:memory|writeAddress~4                                                                   ; 40      ;
+; memory:memory|cache[0][2]~80                                                                   ; 31      ;
+; memory:memory|cache[0][2]~23                                                                   ; 25      ;
+; memory:memory|always0~4                                                                        ; 20      ;
+; memory:memory|always0~3                                                                        ; 18      ;
 ; SW[17]                                                                                         ; 17      ;
 ; SW[16]                                                                                         ; 17      ;
 ; SW[15]                                                                                         ; 17      ;
@@ -1753,56 +1755,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[12]                                                                                         ; 17      ;
 ; SW[11]                                                                                         ; 17      ;
 ; SW[10]                                                                                         ; 17      ;
-; memory:memory|always0~6                                                                        ; 17      ;
-; memory:memory|Equal4~2                                                                         ; 17      ;
-; memory:memory|cache[0][0]~108                                                                  ; 16      ;
-; memory:memory|cache[2][0]~102                                                                  ; 16      ;
-; memory:memory|cache[3][1]~89                                                                   ; 16      ;
-; memory:memory|outputValid~3                                                                    ; 16      ;
-; memory:memory|outputValid~1                                                                    ; 15      ;
-; memory:memory|cache[1][6]~113                                                                  ; 14      ;
-; memory:memory|memData[0]~26                                                                    ; 13      ;
-; memory:memory|outputData[2]~1                                                                  ; 13      ;
-; memory:memory|outputValid~0                                                                    ; 13      ;
-; memory:memory|outputData[2]~0                                                                  ; 12      ;
-; memory:memory|cache~83                                                                         ; 10      ;
-; memory:memory|memAddress[3]~3                                                                  ; 10      ;
+; memory:memory|always0~7                                                                        ; 17      ;
+; memory:memory|cache[3][1]~98                                                                   ; 16      ;
+; memory:memory|cache[2][0]~92                                                                   ; 16      ;
+; memory:memory|cache[0][2]~79                                                                   ; 16      ;
+; memory:memory|cache[1][4]~135                                                                  ; 14      ;
+; memory:memory|outputData[2]~13                                                                 ; 14      ;
+; memory:memory|memData[0]~3                                                                     ; 13      ;
+; memory:memory|outputData[2]~14                                                                 ; 12      ;
+; memory:memory|outputData[2]~9                                                                  ; 12      ;
+; memory:memory|outputData[2]~8                                                                  ; 12      ;
+; memory:memory|outputValid~0                                                                    ; 12      ;
+; memory:memory|cache~57                                                                         ; 11      ;
+; memory:memory|cache[1][14]~1                                                                   ; 11      ;
+; memory:memory|cache~215                                                                        ; 10      ;
 ; memory:memory|memAddress[2]~2                                                                  ; 10      ;
-; memory:memory|memAddress[1]~1                                                                  ; 10      ;
+; memory:memory|memAddress[3]~3                                                                  ; 10      ;
 ; memory:memory|memAddress[0]~0                                                                  ; 10      ;
+; memory:memory|memAddress[1]~1                                                                  ; 10      ;
 ; SW[3]                                                                                          ; 9       ;
 ; SW[2]                                                                                          ; 9       ;
 ; SW[1]                                                                                          ; 9       ;
 ; SW[0]                                                                                          ; 9       ;
-; memory:memory|Decoder0~2                                                                       ; 9       ;
-; memory:memory|cache~85                                                                         ; 9       ;
-; memory:memory|cache~78                                                                         ; 9       ;
-; memory:memory|cache~48                                                                         ; 9       ;
-; memory:memory|always0~4                                                                        ; 9       ;
+; memory:memory|cache~90                                                                         ; 9       ;
 ; memory:memory|memAddress[4]~4                                                                  ; 9       ;
-; memory:memory|cache[0][0]~111                                                                  ; 8       ;
-; memory:memory|cache[2][0]~106                                                                  ; 8       ;
-; memory:memory|cache[3][1]~94                                                                   ; 8       ;
-; memory:memory|cache[0][0]~80                                                                   ; 8       ;
-; memory:memory|Decoder0~0                                                                       ; 8       ;
-; memory:memory|cache~62                                                                         ; 8       ;
-; memory:memory|cache~39                                                                         ; 8       ;
-; memory:memory|outputData[2]~5                                                                  ; 8       ;
-; memory:memory|cache[1][14]~1                                                                   ; 8       ;
+; memory:memory|cache~133                                                                        ; 8       ;
+; memory:memory|cache[3][1]~102                                                                  ; 8       ;
+; memory:memory|cache[2][0]~96                                                                   ; 8       ;
+; memory:memory|Decoder0~2                                                                       ; 8       ;
+; memory:memory|cache[0][2]~83                                                                   ; 8       ;
+; memory:memory|Mux17~0                                                                          ; 8       ;
+; memory:memory|Decoder0~1                                                                       ; 8       ;
+; memory:memory|outputData[2]~17                                                                 ; 8       ;
+; memory:memory|always0~6                                                                        ; 8       ;
+; memory:memory|always0~5                                                                        ; 8       ;
+; memory:memory|outputValid~3                                                                    ; 8       ;
+; memory:memory|outputValid~1                                                                    ; 8       ;
+; memory:memory|Equal4~2                                                                         ; 8       ;
+; memory:memory|cache[0][2]~22                                                                   ; 8       ;
 ; SW[4]                                                                                          ; 7       ;
-; memory:memory|cache~235                                                                        ; 7       ;
-; memory:memory|cache~206                                                                        ; 7       ;
-; memory:memory|cache[1][6]~117                                                                  ; 7       ;
-; memory:memory|Decoder0~1                                                                       ; 7       ;
-; memory:memory|cache~56                                                                         ; 7       ;
-; memory:memory|cache~50                                                                         ; 7       ;
-; memory:memory|cache~33                                                                         ; 7       ;
-; memory:memory|cache~31                                                                         ; 7       ;
-; memory:memory|Equal1~3                                                                         ; 7       ;
+; memory:memory|cache[1][4]~138                                                                  ; 7       ;
+; memory:memory|cache~27                                                                         ; 7       ;
+; memory:memory|cache[0][13]                                                                     ; 7       ;
 ; memory:memory|Equal1~2                                                                         ; 7       ;
 ; memory:memory|Equal1~1                                                                         ; 7       ;
 ; memory:memory|Equal1~0                                                                         ; 7       ;
-; memory:memory|Equal2~2                                                                         ; 7       ;
 ; memory:memory|outputData[7]                                                                    ; 7       ;
 ; memory:memory|outputData[6]                                                                    ; 7       ;
 ; memory:memory|outputData[5]                                                                    ; 7       ;
@@ -1811,88 +1808,88 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|outputData[2]                                                                    ; 7       ;
 ; memory:memory|outputData[1]                                                                    ; 7       ;
 ; memory:memory|outputData[0]                                                                    ; 7       ;
-; memory:memory|cache~232                                                                        ; 6       ;
-; memory:memory|cache[2][12]~99                                                                  ; 6       ;
-; memory:memory|cache[1][9]~84                                                                   ; 6       ;
+; memory:memory|cache~107                                                                        ; 6       ;
+; memory:memory|cache~106                                                                        ; 6       ;
+; memory:memory|cache[2][12]~88                                                                  ; 6       ;
+; memory:memory|cache[1][9]~75                                                                   ; 6       ;
+; memory:memory|outputValid~4                                                                    ; 6       ;
+; memory:memory|currentData~7                                                                    ; 6       ;
+; memory:memory|currentData~6                                                                    ; 6       ;
+; memory:memory|currentData~5                                                                    ; 6       ;
+; memory:memory|currentData~4                                                                    ; 6       ;
+; memory:memory|currentData~3                                                                    ; 6       ;
+; memory:memory|currentData~2                                                                    ; 6       ;
+; memory:memory|currentData~1                                                                    ; 6       ;
 ; memory:memory|memWren                                                                          ; 6       ;
-; memory:memory|cache~72                                                                         ; 6       ;
-; memory:memory|always0~7                                                                        ; 6       ;
-; memory:memory|cache[0][13]                                                                     ; 6       ;
-; memory:memory|cache[2][0]~27                                                                   ; 6       ;
-; memory:memory|cache[0][12]~233                                                                 ; 5       ;
-; memory:memory|cache~228                                                                        ; 5       ;
-; memory:memory|cache~227                                                                        ; 5       ;
-; memory:memory|LessThan13~5                                                                     ; 5       ;
-; memory:memory|currentData~7                                                                    ; 5       ;
-; memory:memory|currentData~6                                                                    ; 5       ;
-; memory:memory|currentData~5                                                                    ; 5       ;
-; memory:memory|currentData~4                                                                    ; 5       ;
-; memory:memory|currentData~3                                                                    ; 5       ;
-; memory:memory|currentData~2                                                                    ; 5       ;
-; memory:memory|currentData~1                                                                    ; 5       ;
-; memory:memory|Mux17~0                                                                          ; 5       ;
-; memory:memory|cache[3][8]~97                                                                   ; 5       ;
-; memory:memory|memCount[0]                                                                      ; 5       ;
-; memory:memory|currentData~0                                                                    ; 5       ;
-; memory:memory|cache~66                                                                         ; 5       ;
-; memory:memory|cache~43                                                                         ; 5       ;
+; memory:memory|cache~67                                                                         ; 6       ;
+; memory:memory|cache~54                                                                         ; 6       ;
+; memory:memory|cache~40                                                                         ; 6       ;
+; memory:memory|cache~33                                                                         ; 6       ;
+; memory:memory|Equal2~2                                                                         ; 6       ;
+; memory:memory|Equal1~3                                                                         ; 6       ;
+; SW[5]                                                                                          ; 5       ;
+; memory:memory|cache~221                                                                        ; 5       ;
+; memory:memory|cache~216                                                                        ; 5       ;
+; memory:memory|LessThan12~7                                                                     ; 5       ;
+; memory:memory|cache[3][8]~86                                                                   ; 5       ;
+; memory:memory|cache[0][12]~84                                                                  ; 5       ;
+; memory:memory|Decoder0~0                                                                       ; 5       ;
+; memory:memory|cache~56                                                                         ; 5       ;
+; memory:memory|cache~47                                                                         ; 5       ;
+; memory:memory|cache~31                                                                         ; 5       ;
 ; memory:memory|cache[0][14]                                                                     ; 5       ;
-; SW[5]                                                                                          ; 4       ;
-; memory:memory|LessThan12~6                                                                     ; 4       ;
-; memory:memory|cache~231                                                                        ; 4       ;
-; memory:memory|cache~199                                                                        ; 4       ;
-; memory:memory|memCount[1]                                                                      ; 4       ;
-; memory:memory|cache~68                                                                         ; 4       ;
-; memory:memory|cache~52                                                                         ; 4       ;
+; memory:memory|currentData~0                                                                    ; 5       ;
+; memory:memory|outputValid                                                                      ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[1] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[2] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[3] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[4] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[5] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[6] ; 5       ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[7] ; 5       ;
+; memory:memory|cache~217                                                                        ; 4       ;
+; memory:memory|LessThan13~7                                                                     ; 4       ;
+; memory:memory|LessThan13~5                                                                     ; 4       ;
+; memory:memory|cache~103                                                                        ; 4       ;
+; memory:memory|cache~63                                                                         ; 4       ;
+; memory:memory|cache~61                                                                         ; 4       ;
+; memory:memory|writeAddress~1                                                                   ; 4       ;
+; memory:memory|cache~49                                                                         ; 4       ;
 ; memory:memory|cache~46                                                                         ; 4       ;
+; memory:memory|cache~34                                                                         ; 4       ;
 ; memory:memory|cache[2][13]                                                                     ; 4       ;
+; memory:memory|cache~29                                                                         ; 4       ;
 ; memory:memory|cache[1][13]                                                                     ; 4       ;
-; memory:memory|cache~30                                                                         ; 4       ;
 ; memory:memory|cache[3][13]                                                                     ; 4       ;
-; memory:memory|outputValid                                                                      ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[1] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[2] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[3] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[4] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[5] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[6] ; 4       ;
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[7] ; 4       ;
+; memory:memory|memCount[0]                                                                      ; 4       ;
 ; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[0] ; 4       ;
-; memory:memory|writeAddress~7                                                                   ; 3       ;
-; memory:memory|Equal7~2                                                                         ; 3       ;
-; memory:memory|cache[2][14]~216                                                                 ; 3       ;
-; memory:memory|Equal8~1                                                                         ; 3       ;
+; memory:memory|cache~220                                                                        ; 3       ;
+; memory:memory|cache~219                                                                        ; 3       ;
 ; memory:memory|Mux16~0                                                                          ; 3       ;
 ; memory:memory|cache~60                                                                         ; 3       ;
-; memory:memory|cache~53                                                                         ; 3       ;
-; memory:memory|cache~45                                                                         ; 3       ;
+; memory:memory|Equal7~0                                                                         ; 3       ;
 ; memory:memory|cache~44                                                                         ; 3       ;
+; memory:memory|cache~43                                                                         ; 3       ;
+; memory:memory|cache~36                                                                         ; 3       ;
 ; memory:memory|LessThan1~0                                                                      ; 3       ;
 ; memory:memory|cache[2][14]                                                                     ; 3       ;
-; memory:memory|cache~35                                                                         ; 3       ;
 ; memory:memory|LessThan0~0                                                                      ; 3       ;
+; memory:memory|cache~26                                                                         ; 3       ;
 ; memory:memory|LessThan2~0                                                                      ; 3       ;
 ; memory:memory|cache[3][14]                                                                     ; 3       ;
+; memory:memory|memCount[1]                                                                      ; 3       ;
 ; memory:memory|cache[3][8]                                                                      ; 3       ;
 ; memory:memory|cache[1][9]                                                                      ; 3       ;
-; memory:memory|currentAddress[4]                                                                ; 3       ;
 ; memory:memory|cache[1][0]                                                                      ; 3       ;
-; memory:memory|cache~234                                                                        ; 2       ;
-; memory:memory|memCount[0]~0                                                                    ; 2       ;
-; memory:memory|cache[0][14]~208                                                                 ; 2       ;
-; memory:memory|LessThan14~2                                                                     ; 2       ;
-; memory:memory|LessThan14~0                                                                     ; 2       ;
-; memory:memory|Mux18~3                                                                          ; 2       ;
-; memory:memory|cache~207                                                                        ; 2       ;
-; memory:memory|Mux18~0                                                                          ; 2       ;
-; memory:memory|LessThan13~4                                                                     ; 2       ;
-; memory:memory|LessThan13~3                                                                     ; 2       ;
-; memory:memory|Mux17~2                                                                          ; 2       ;
-; memory:memory|LessThan13~0                                                                     ; 2       ;
+; memory:memory|currentAddress[4]                                                                ; 3       ;
+; memory:memory|currentWren                                                                      ; 3       ;
+; memory:memory|LessThan13~8                                                                     ; 2       ;
+; memory:memory|cache~218                                                                        ; 2       ;
+; memory:memory|cache~211                                                                        ; 2       ;
+; memory:memory|cache~208                                                                        ; 2       ;
 ; memory:memory|cache~205                                                                        ; 2       ;
-; memory:memory|cache[0][14]~204                                                                 ; 2       ;
 ; memory:memory|cache~202                                                                        ; 2       ;
-; memory:memory|cache~201                                                                        ; 2       ;
+; memory:memory|cache~199                                                                        ; 2       ;
 ; memory:memory|cache~196                                                                        ; 2       ;
 ; memory:memory|cache~193                                                                        ; 2       ;
 ; memory:memory|cache~190                                                                        ; 2       ;
@@ -1913,62 +1910,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~145                                                                        ; 2       ;
 ; memory:memory|cache~142                                                                        ; 2       ;
 ; memory:memory|cache~139                                                                        ; 2       ;
-; memory:memory|cache~136                                                                        ; 2       ;
-; memory:memory|cache~133                                                                        ; 2       ;
+; memory:memory|cache~134                                                                        ; 2       ;
 ; memory:memory|cache~130                                                                        ; 2       ;
 ; memory:memory|cache~127                                                                        ; 2       ;
-; memory:memory|cache~124                                                                        ; 2       ;
-; memory:memory|cache~121                                                                        ; 2       ;
-; memory:memory|cache~118                                                                        ; 2       ;
-; memory:memory|cache~112                                                                        ; 2       ;
-; memory:memory|cache~107                                                                        ; 2       ;
+; memory:memory|cache[0][14]~108                                                                 ; 2       ;
+; memory:memory|Mux18~5                                                                          ; 2       ;
+; memory:memory|Mux17~2                                                                          ; 2       ;
+; memory:memory|LessThan13~2                                                                     ; 2       ;
+; memory:memory|cache~105                                                                        ; 2       ;
+; memory:memory|outputValid~6                                                                    ; 2       ;
+; memory:memory|memCount[0]~0                                                                    ; 2       ;
 ; memory:memory|cache~101                                                                        ; 2       ;
-; memory:memory|cache[0][8]~96                                                                   ; 2       ;
-; memory:memory|cache~88                                                                         ; 2       ;
-; memory:memory|cache~79                                                                         ; 2       ;
-; memory:memory|cache[3][15]                                                                     ; 2       ;
-; memory:memory|cache~77                                                                         ; 2       ;
-; memory:memory|cache~76                                                                         ; 2       ;
-; memory:memory|cache~75                                                                         ; 2       ;
-; memory:memory|cache~74                                                                         ; 2       ;
-; memory:memory|cache~73                                                                         ; 2       ;
-; memory:memory|writeAddress~4                                                                   ; 2       ;
-; memory:memory|cache~71                                                                         ; 2       ;
-; memory:memory|cache~65                                                                         ; 2       ;
-; memory:memory|Equal8~0                                                                         ; 2       ;
-; memory:memory|cache~49                                                                         ; 2       ;
-; memory:memory|cache~41                                                                         ; 2       ;
-; memory:memory|cache~38                                                                         ; 2       ;
-; memory:memory|cache~28                                                                         ; 2       ;
+; memory:memory|cache~97                                                                         ; 2       ;
+; memory:memory|cache~91                                                                         ; 2       ;
+; memory:memory|cache~78                                                                         ; 2       ;
 ; memory:memory|cache[3][7]                                                                      ; 2       ;
-; memory:memory|cache[2][7]                                                                      ; 2       ;
-; memory:memory|cache[0][7]                                                                      ; 2       ;
 ; memory:memory|cache[1][7]                                                                      ; 2       ;
-; memory:memory|cache[0][6]                                                                      ; 2       ;
-; memory:memory|cache[2][6]                                                                      ; 2       ;
+; memory:memory|cache[0][7]                                                                      ; 2       ;
+; memory:memory|cache[2][7]                                                                      ; 2       ;
 ; memory:memory|cache[3][6]                                                                      ; 2       ;
+; memory:memory|cache[2][6]                                                                      ; 2       ;
+; memory:memory|cache[0][6]                                                                      ; 2       ;
 ; memory:memory|cache[1][6]                                                                      ; 2       ;
 ; memory:memory|cache[3][5]                                                                      ; 2       ;
-; memory:memory|cache[2][5]                                                                      ; 2       ;
-; memory:memory|cache[0][5]                                                                      ; 2       ;
 ; memory:memory|cache[1][5]                                                                      ; 2       ;
-; memory:memory|cache[0][4]                                                                      ; 2       ;
-; memory:memory|cache[2][4]                                                                      ; 2       ;
+; memory:memory|cache[0][5]                                                                      ; 2       ;
+; memory:memory|cache[2][5]                                                                      ; 2       ;
 ; memory:memory|cache[3][4]                                                                      ; 2       ;
+; memory:memory|cache[2][4]                                                                      ; 2       ;
+; memory:memory|cache[0][4]                                                                      ; 2       ;
 ; memory:memory|cache[1][4]                                                                      ; 2       ;
 ; memory:memory|cache[3][3]                                                                      ; 2       ;
-; memory:memory|cache[2][3]                                                                      ; 2       ;
-; memory:memory|cache[0][3]                                                                      ; 2       ;
 ; memory:memory|cache[1][3]                                                                      ; 2       ;
-; memory:memory|cache[0][2]                                                                      ; 2       ;
-; memory:memory|cache[2][2]                                                                      ; 2       ;
+; memory:memory|cache[0][3]                                                                      ; 2       ;
+; memory:memory|cache[2][3]                                                                      ; 2       ;
 ; memory:memory|cache[3][2]                                                                      ; 2       ;
+; memory:memory|cache[2][2]                                                                      ; 2       ;
+; memory:memory|cache[0][2]                                                                      ; 2       ;
 ; memory:memory|cache[1][2]                                                                      ; 2       ;
 ; memory:memory|cache[3][1]                                                                      ; 2       ;
-; memory:memory|cache[2][1]                                                                      ; 2       ;
-; memory:memory|cache[0][1]                                                                      ; 2       ;
 ; memory:memory|cache[1][1]                                                                      ; 2       ;
-; memory:memory|cache[0][0]                                                                      ; 2       ;
+; memory:memory|cache[0][1]                                                                      ; 2       ;
+; memory:memory|cache[2][1]                                                                      ; 2       ;
+; memory:memory|outputData[2]~16                                                                 ; 2       ;
+; memory:memory|cache~73                                                                         ; 2       ;
+; memory:memory|cache[3][15]                                                                     ; 2       ;
+; memory:memory|cache~72                                                                         ; 2       ;
+; memory:memory|cache~71                                                                         ; 2       ;
+; memory:memory|cache~70                                                                         ; 2       ;
+; memory:memory|cache~69                                                                         ; 2       ;
+; memory:memory|cache~68                                                                         ; 2       ;
+; memory:memory|writeAddress~3                                                                   ; 2       ;
+; memory:memory|cache~66                                                                         ; 2       ;
+; memory:memory|cache~52                                                                         ; 2       ;
+; memory:memory|cache~51                                                                         ; 2       ;
+; memory:memory|cache~50                                                                         ; 2       ;
+; memory:memory|Equal8~0                                                                         ; 2       ;
+; memory:memory|cache~45                                                                         ; 2       ;
+; memory:memory|cache~42                                                                         ; 2       ;
+; memory:memory|cache~24                                                                         ; 2       ;
+; memory:memory|cache[3][0]                                                                      ; 2       ;
 ; memory:memory|cache[2][0]                                                                      ; 2       ;
 ; memory:memory|cache[2][12]                                                                     ; 2       ;
 ; memory:memory|cache[2][16]                                                                     ; 2       ;
@@ -1980,15 +1981,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache[3][10]                                                                     ; 2       ;
 ; memory:memory|cache[3][11]                                                                     ; 2       ;
 ; memory:memory|cache[3][9]                                                                      ; 2       ;
+; memory:memory|cache[1][12]                                                                     ; 2       ;
+; memory:memory|cache[1][10]                                                                     ; 2       ;
+; memory:memory|cache[1][11]                                                                     ; 2       ;
+; memory:memory|cache[1][8]                                                                      ; 2       ;
 ; memory:memory|cache[0][12]                                                                     ; 2       ;
 ; memory:memory|cache[0][11]                                                                     ; 2       ;
 ; memory:memory|cache[0][10]                                                                     ; 2       ;
 ; memory:memory|cache[0][9]                                                                      ; 2       ;
 ; memory:memory|cache[0][8]                                                                      ; 2       ;
-; memory:memory|cache[1][12]                                                                     ; 2       ;
-; memory:memory|cache[1][10]                                                                     ; 2       ;
-; memory:memory|cache[1][11]                                                                     ; 2       ;
-; memory:memory|cache[1][8]                                                                      ; 2       ;
+; memory:memory|cache[0][0]                                                                      ; 2       ;
 ; memory:memory|always0~2                                                                        ; 2       ;
 ; memory:memory|currentAddress[3]                                                                ; 2       ;
 ; memory:memory|always0~1                                                                        ; 2       ;
@@ -1996,18 +1998,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|currentAddress[1]                                                                ; 2       ;
 ; memory:memory|always0~0                                                                        ; 2       ;
 ; memory:memory|currentAddress[0]                                                                ; 2       ;
-; memory:memory|cache[3][0]                                                                      ; 2       ;
-; memory:memory|currentWren                                                                      ; 2       ;
 ; memory:memory|cache[0][15]                                                                     ; 2       ;
 ; memory:memory|cache[1][15]                                                                     ; 2       ;
 ; memory:memory|cache[1][14]                                                                     ; 2       ;
 ; memory:memory|cache[2][15]                                                                     ; 2       ;
-; memory:memory|cache[2][10]~242                                                                 ; 1       ;
-; memory:memory|cache[2][8]~241                                                                  ; 1       ;
-; memory:memory|cache~236                                                                        ; 1       ;
-; memory:memory|cache~230                                                                        ; 1       ;
-; memory:memory|cache[1][14]~229                                                                 ; 1       ;
-; memory:memory|memData~25                                                                       ; 1       ;
+; memory:memory|outputData[0]~0                                                                  ; 2       ;
+; memory:memory|cache[2][10]~229                                                                 ; 1       ;
+; memory:memory|cache[2][8]~228                                                                  ; 1       ;
+; memory:memory|Mux15~2                                                                          ; 1       ;
+; memory:memory|cache~223                                                                        ; 1       ;
+; memory:memory|cache~222                                                                        ; 1       ;
 ; memory:memory|memData~24                                                                       ; 1       ;
 ; memory:memory|memData~23                                                                       ; 1       ;
 ; memory:memory|memData~22                                                                       ; 1       ;
@@ -2028,6 +2028,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|memData~7                                                                        ; 1       ;
 ; memory:memory|memData~6                                                                        ; 1       ;
 ; memory:memory|memData~5                                                                        ; 1       ;
+; memory:memory|memData~4                                                                        ; 1       ;
 ; memory:memory|memAddress~14                                                                    ; 1       ;
 ; memory:memory|memAddress~13                                                                    ; 1       ;
 ; memory:memory|memAddress~12                                                                    ; 1       ;
@@ -2038,48 +2039,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|memAddress~7                                                                     ; 1       ;
 ; memory:memory|memAddress~6                                                                     ; 1       ;
 ; memory:memory|memAddress~5                                                                     ; 1       ;
-; memory:memory|memData~4                                                                        ; 1       ;
-; memory:memory|memData~3                                                                        ; 1       ;
 ; memory:memory|memData~2                                                                        ; 1       ;
-; memory:memory|cache~226                                                                        ; 1       ;
-; memory:memory|memData[7]                                                                       ; 1       ;
-; memory:memory|memData[6]                                                                       ; 1       ;
-; memory:memory|memData[5]                                                                       ; 1       ;
-; memory:memory|memData[4]                                                                       ; 1       ;
-; memory:memory|memData[3]                                                                       ; 1       ;
-; memory:memory|memData[2]                                                                       ; 1       ;
-; memory:memory|memData[1]                                                                       ; 1       ;
-; memory:memory|memCount~2                                                                       ; 1       ;
-; memory:memory|memCount~1                                                                       ; 1       ;
-; memory:memory|memData[0]                                                                       ; 1       ;
-; memory:memory|cache[3][15]~225                                                                 ; 1       ;
-; memory:memory|cache[3][15]~224                                                                 ; 1       ;
-; memory:memory|cache[3][15]~223                                                                 ; 1       ;
-; memory:memory|cache[3][15]~222                                                                 ; 1       ;
-; memory:memory|cache~221                                                                        ; 1       ;
-; memory:memory|cache~220                                                                        ; 1       ;
-; memory:memory|cache~219                                                                        ; 1       ;
-; memory:memory|cache~218                                                                        ; 1       ;
-; memory:memory|Mux18~4                                                                          ; 1       ;
-; memory:memory|cache~217                                                                        ; 1       ;
-; memory:memory|cache~215                                                                        ; 1       ;
+; memory:memory|memData~1                                                                        ; 1       ;
+; memory:memory|memData~0                                                                        ; 1       ;
 ; memory:memory|cache~214                                                                        ; 1       ;
 ; memory:memory|cache~213                                                                        ; 1       ;
-; memory:memory|cache[0][14]~212                                                                 ; 1       ;
-; memory:memory|cache~211                                                                        ; 1       ;
+; memory:memory|cache~212                                                                        ; 1       ;
 ; memory:memory|cache~210                                                                        ; 1       ;
-; memory:memory|cache[0][14]~209                                                                 ; 1       ;
-; memory:memory|LessThan14~1                                                                     ; 1       ;
-; memory:memory|Mux18~2                                                                          ; 1       ;
-; memory:memory|Mux18~1                                                                          ; 1       ;
-; memory:memory|LessThan13~2                                                                     ; 1       ;
-; memory:memory|LessThan13~1                                                                     ; 1       ;
-; memory:memory|Mux17~1                                                                          ; 1       ;
-; memory:memory|LessThan12~5                                                                     ; 1       ;
-; memory:memory|LessThan12~4                                                                     ; 1       ;
-; memory:memory|LessThan12~3                                                                     ; 1       ;
-; memory:memory|LessThan12~2                                                                     ; 1       ;
+; memory:memory|cache~209                                                                        ; 1       ;
+; memory:memory|cache~207                                                                        ; 1       ;
+; memory:memory|cache~206                                                                        ; 1       ;
+; memory:memory|cache~204                                                                        ; 1       ;
 ; memory:memory|cache~203                                                                        ; 1       ;
+; memory:memory|memData[7]                                                                       ; 1       ;
+; memory:memory|cache~201                                                                        ; 1       ;
 ; memory:memory|cache~200                                                                        ; 1       ;
 ; memory:memory|cache~198                                                                        ; 1       ;
 ; memory:memory|cache~197                                                                        ; 1       ;
@@ -2087,8 +2060,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~194                                                                        ; 1       ;
 ; memory:memory|cache~192                                                                        ; 1       ;
 ; memory:memory|cache~191                                                                        ; 1       ;
+; memory:memory|memData[6]                                                                       ; 1       ;
 ; memory:memory|cache~189                                                                        ; 1       ;
-; memory:memory|currentData[7]                                                                   ; 1       ;
 ; memory:memory|cache~188                                                                        ; 1       ;
 ; memory:memory|cache~186                                                                        ; 1       ;
 ; memory:memory|cache~185                                                                        ; 1       ;
@@ -2096,8 +2069,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~182                                                                        ; 1       ;
 ; memory:memory|cache~180                                                                        ; 1       ;
 ; memory:memory|cache~179                                                                        ; 1       ;
+; memory:memory|memData[5]                                                                       ; 1       ;
 ; memory:memory|cache~177                                                                        ; 1       ;
-; memory:memory|currentData[6]                                                                   ; 1       ;
 ; memory:memory|cache~176                                                                        ; 1       ;
 ; memory:memory|cache~174                                                                        ; 1       ;
 ; memory:memory|cache~173                                                                        ; 1       ;
@@ -2105,8 +2078,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~170                                                                        ; 1       ;
 ; memory:memory|cache~168                                                                        ; 1       ;
 ; memory:memory|cache~167                                                                        ; 1       ;
+; memory:memory|memData[4]                                                                       ; 1       ;
 ; memory:memory|cache~165                                                                        ; 1       ;
-; memory:memory|currentData[5]                                                                   ; 1       ;
 ; memory:memory|cache~164                                                                        ; 1       ;
 ; memory:memory|cache~162                                                                        ; 1       ;
 ; memory:memory|cache~161                                                                        ; 1       ;
@@ -2114,8 +2087,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~158                                                                        ; 1       ;
 ; memory:memory|cache~156                                                                        ; 1       ;
 ; memory:memory|cache~155                                                                        ; 1       ;
+; memory:memory|memData[3]                                                                       ; 1       ;
 ; memory:memory|cache~153                                                                        ; 1       ;
-; memory:memory|currentData[4]                                                                   ; 1       ;
 ; memory:memory|cache~152                                                                        ; 1       ;
 ; memory:memory|cache~150                                                                        ; 1       ;
 ; memory:memory|cache~149                                                                        ; 1       ;
@@ -2123,102 +2096,133 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memory:memory|cache~146                                                                        ; 1       ;
 ; memory:memory|cache~144                                                                        ; 1       ;
 ; memory:memory|cache~143                                                                        ; 1       ;
+; memory:memory|memData[2]                                                                       ; 1       ;
 ; memory:memory|cache~141                                                                        ; 1       ;
-; memory:memory|currentData[3]                                                                   ; 1       ;
 ; memory:memory|cache~140                                                                        ; 1       ;
-; memory:memory|cache~138                                                                        ; 1       ;
 ; memory:memory|cache~137                                                                        ; 1       ;
-; memory:memory|cache~135                                                                        ; 1       ;
-; memory:memory|cache~134                                                                        ; 1       ;
+; memory:memory|cache~136                                                                        ; 1       ;
 ; memory:memory|cache~132                                                                        ; 1       ;
 ; memory:memory|cache~131                                                                        ; 1       ;
 ; memory:memory|cache~129                                                                        ; 1       ;
-; memory:memory|currentData[2]                                                                   ; 1       ;
 ; memory:memory|cache~128                                                                        ; 1       ;
-; memory:memory|cache~126                                                                        ; 1       ;
-; memory:memory|cache~125                                                                        ; 1       ;
-; memory:memory|cache~123                                                                        ; 1       ;
+; memory:memory|memData[1]                                                                       ; 1       ;
+; memory:memory|cache[3][15]~126                                                                 ; 1       ;
+; memory:memory|cache[3][15]~125                                                                 ; 1       ;
+; memory:memory|cache[3][15]~124                                                                 ; 1       ;
+; memory:memory|cache[3][15]~123                                                                 ; 1       ;
 ; memory:memory|cache~122                                                                        ; 1       ;
+; memory:memory|cache~121                                                                        ; 1       ;
 ; memory:memory|cache~120                                                                        ; 1       ;
 ; memory:memory|cache~119                                                                        ; 1       ;
-; memory:memory|cache[1][6]~116                                                                  ; 1       ;
+; memory:memory|cache~118                                                                        ; 1       ;
+; memory:memory|cache~117                                                                        ; 1       ;
+; memory:memory|cache~116                                                                        ; 1       ;
 ; memory:memory|cache~115                                                                        ; 1       ;
-; memory:memory|currentData[1]                                                                   ; 1       ;
 ; memory:memory|cache~114                                                                        ; 1       ;
+; memory:memory|cache~113                                                                        ; 1       ;
+; memory:memory|cache[0][14]~112                                                                 ; 1       ;
+; memory:memory|cache~111                                                                        ; 1       ;
 ; memory:memory|cache~110                                                                        ; 1       ;
 ; memory:memory|cache~109                                                                        ; 1       ;
-; memory:memory|cache[2][0]~105                                                                  ; 1       ;
-; memory:memory|Equal9~0                                                                         ; 1       ;
+; memory:memory|LessThan14~1                                                                     ; 1       ;
+; memory:memory|Mux19~0                                                                          ; 1       ;
+; memory:memory|LessThan14~0                                                                     ; 1       ;
+; memory:memory|Mux18~6                                                                          ; 1       ;
+; memory:memory|Mux18~4                                                                          ; 1       ;
+; memory:memory|Mux18~3                                                                          ; 1       ;
+; memory:memory|Mux18~2                                                                          ; 1       ;
+; memory:memory|Mux18~1                                                                          ; 1       ;
+; memory:memory|LessThan13~6                                                                     ; 1       ;
+; memory:memory|Mux17~1                                                                          ; 1       ;
+; memory:memory|LessThan13~4                                                                     ; 1       ;
+; memory:memory|LessThan13~3                                                                     ; 1       ;
+; memory:memory|LessThan12~6                                                                     ; 1       ;
+; memory:memory|LessThan12~5                                                                     ; 1       ;
+; memory:memory|LessThan12~4                                                                     ; 1       ;
+; memory:memory|LessThan12~3                                                                     ; 1       ;
+; memory:memory|LessThan12~2                                                                     ; 1       ;
+; memory:memory|LessThan12~1                                                                     ; 1       ;
+; memory:memory|LessThan12~0                                                                     ; 1       ;
+; memory:memory|Mux18~0                                                                          ; 1       ;
 ; memory:memory|cache~104                                                                        ; 1       ;
-; memory:memory|cache~103                                                                        ; 1       ;
-; memory:memory|cache[2][16]~100                                                                 ; 1       ;
-; memory:memory|cache[3][8]~98                                                                   ; 1       ;
-; memory:memory|cache[1][9]~95                                                                   ; 1       ;
-; memory:memory|cache[3][1]~93                                                                   ; 1       ;
-; memory:memory|cache~92                                                                         ; 1       ;
-; memory:memory|cache~91                                                                         ; 1       ;
-; memory:memory|cache[1][0]~87                                                                   ; 1       ;
-; memory:memory|cache~86                                                                         ; 1       ;
-; memory:memory|cache[1][0]~82                                                                   ; 1       ;
-; memory:memory|cache[1][0]~81                                                                   ; 1       ;
-; memory:memory|currentData[0]                                                                   ; 1       ;
-; memory:memory|outputValid~2                                                                    ; 1       ;
-; memory:memory|Mux0~0                                                                           ; 1       ;
-; memory:memory|writeAddress[1]                                                                  ; 1       ;
-; memory:memory|cache~70                                                                         ; 1       ;
-; memory:memory|cache~69                                                                         ; 1       ;
-; memory:memory|cache~67                                                                         ; 1       ;
-; memory:memory|cache~64                                                                         ; 1       ;
-; memory:memory|cache~63                                                                         ; 1       ;
-; memory:memory|writeAddress~3                                                                   ; 1       ;
-; memory:memory|writeAddress~2                                                                   ; 1       ;
-; memory:memory|cache~61                                                                         ; 1       ;
-; memory:memory|cache~59                                                                         ; 1       ;
-; memory:memory|cache~58                                                                         ; 1       ;
-; memory:memory|cache[1][14]~57                                                                  ; 1       ;
-; memory:memory|cache~55                                                                         ; 1       ;
-; memory:memory|cache[1][14]~54                                                                  ; 1       ;
-; memory:memory|cache~51                                                                         ; 1       ;
-; memory:memory|cache~47                                                                         ; 1       ;
-; memory:memory|cache~42                                                                         ; 1       ;
-; memory:memory|cache~40                                                                         ; 1       ;
-; memory:memory|cache~37                                                                         ; 1       ;
-; memory:memory|cache~36                                                                         ; 1       ;
-; memory:memory|cache~34                                                                         ; 1       ;
-; memory:memory|cache~32                                                                         ; 1       ;
-; memory:memory|cache~29                                                                         ; 1       ;
-; memory:memory|writeAddress[0]                                                                  ; 1       ;
+; memory:memory|memCount~2                                                                       ; 1       ;
+; memory:memory|memCount~1                                                                       ; 1       ;
+; memory:memory|cache~100                                                                        ; 1       ;
+; memory:memory|cache~99                                                                         ; 1       ;
+; memory:memory|cache[2][0]~95                                                                   ; 1       ;
+; memory:memory|cache~94                                                                         ; 1       ;
+; memory:memory|cache~93                                                                         ; 1       ;
+; memory:memory|cache[2][16]~89                                                                  ; 1       ;
+; memory:memory|cache[3][8]~87                                                                   ; 1       ;
+; memory:memory|cache[1][9]~85                                                                   ; 1       ;
+; memory:memory|cache~82                                                                         ; 1       ;
+; memory:memory|cache~81                                                                         ; 1       ;
+; memory:memory|cache[1][0]~77                                                                   ; 1       ;
+; memory:memory|cache~76                                                                         ; 1       ;
+; memory:memory|cache[1][0]~74                                                                   ; 1       ;
+; memory:memory|memData[0]                                                                       ; 1       ;
+; memory:memory|outputValid~5                                                                    ; 1       ;
+; memory:memory|outputData~38                                                                    ; 1       ;
+; memory:memory|outputData~37                                                                    ; 1       ;
+; memory:memory|outputData~36                                                                    ; 1       ;
+; memory:memory|currentData[7]                                                                   ; 1       ;
+; memory:memory|outputData~35                                                                    ; 1       ;
+; memory:memory|outputData~34                                                                    ; 1       ;
+; memory:memory|outputData~33                                                                    ; 1       ;
+; memory:memory|currentData[6]                                                                   ; 1       ;
+; memory:memory|outputData~32                                                                    ; 1       ;
+; memory:memory|outputData~31                                                                    ; 1       ;
+; memory:memory|outputData~30                                                                    ; 1       ;
+; memory:memory|currentData[5]                                                                   ; 1       ;
+; memory:memory|outputData~29                                                                    ; 1       ;
+; memory:memory|outputData~28                                                                    ; 1       ;
+; memory:memory|outputData~27                                                                    ; 1       ;
+; memory:memory|currentData[4]                                                                   ; 1       ;
 ; memory:memory|outputData~26                                                                    ; 1       ;
 ; memory:memory|outputData~25                                                                    ; 1       ;
 ; memory:memory|outputData~24                                                                    ; 1       ;
+; memory:memory|currentData[3]                                                                   ; 1       ;
 ; memory:memory|outputData~23                                                                    ; 1       ;
 ; memory:memory|outputData~22                                                                    ; 1       ;
 ; memory:memory|outputData~21                                                                    ; 1       ;
+; memory:memory|currentData[2]                                                                   ; 1       ;
 ; memory:memory|outputData~20                                                                    ; 1       ;
 ; memory:memory|outputData~19                                                                    ; 1       ;
 ; memory:memory|outputData~18                                                                    ; 1       ;
-; memory:memory|outputData~17                                                                    ; 1       ;
-; memory:memory|outputData~16                                                                    ; 1       ;
-; memory:memory|outputData~15                                                                    ; 1       ;
-; memory:memory|outputData~14                                                                    ; 1       ;
-; memory:memory|outputData~13                                                                    ; 1       ;
+; memory:memory|currentData[1]                                                                   ; 1       ;
+; memory:memory|outputData[2]~15                                                                 ; 1       ;
+; memory:memory|Mux0~0                                                                           ; 1       ;
+; memory:memory|writeAddress[1]                                                                  ; 1       ;
+; memory:memory|cache~65                                                                         ; 1       ;
+; memory:memory|cache~64                                                                         ; 1       ;
+; memory:memory|cache~62                                                                         ; 1       ;
+; memory:memory|cache~59                                                                         ; 1       ;
+; memory:memory|cache~58                                                                         ; 1       ;
+; memory:memory|writeAddress~2                                                                   ; 1       ;
+; memory:memory|writeAddress~0                                                                   ; 1       ;
+; memory:memory|cache~55                                                                         ; 1       ;
+; memory:memory|cache~53                                                                         ; 1       ;
+; memory:memory|Add9~0                                                                           ; 1       ;
+; memory:memory|cache~48                                                                         ; 1       ;
+; memory:memory|cache~41                                                                         ; 1       ;
+; memory:memory|cache~39                                                                         ; 1       ;
+; memory:memory|cache~38                                                                         ; 1       ;
+; memory:memory|cache~37                                                                         ; 1       ;
+; memory:memory|cache~35                                                                         ; 1       ;
+; memory:memory|cache~32                                                                         ; 1       ;
+; memory:memory|cache~30                                                                         ; 1       ;
+; memory:memory|cache~28                                                                         ; 1       ;
+; memory:memory|cache~25                                                                         ; 1       ;
+; memory:memory|writeAddress[0]                                                                  ; 1       ;
 ; memory:memory|outputData~12                                                                    ; 1       ;
 ; memory:memory|outputData~11                                                                    ; 1       ;
 ; memory:memory|outputData~10                                                                    ; 1       ;
-; memory:memory|outputData~9                                                                     ; 1       ;
-; memory:memory|outputData~8                                                                     ; 1       ;
-; memory:memory|outputData~7                                                                     ; 1       ;
-; memory:memory|outputData~6                                                                     ; 1       ;
-; memory:memory|outputData~4                                                                     ; 1       ;
-; memory:memory|outputData~3                                                                     ; 1       ;
-; memory:memory|outputData~2                                                                     ; 1       ;
-; memory:memory|cache[2][0]~26                                                                   ; 1       ;
-; memory:memory|cache[2][0]~25                                                                   ; 1       ;
-; memory:memory|cache[2][0]~24                                                                   ; 1       ;
+; memory:memory|outputValid~2                                                                    ; 1       ;
 ; memory:memory|Equal4~1                                                                         ; 1       ;
 ; memory:memory|Equal4~0                                                                         ; 1       ;
 ; memory:memory|Equal2~1                                                                         ; 1       ;
 ; memory:memory|Equal2~0                                                                         ; 1       ;
+; memory:memory|currentData[0]                                                                   ; 1       ;
 ; bcd_7seg:bcd|WideOr0~0                                                                         ; 1       ;
 ; bcd_7seg:bcd|WideOr1~0                                                                         ; 1       ;
 ; bcd_7seg:bcd|WideOr2~0                                                                         ; 1       ;
@@ -2254,14 +2258,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; bcd_7seg:bcd5|WideOr4~0                                                                        ; 1       ;
 ; bcd_7seg:bcd5|WideOr5~0                                                                        ; 1       ;
 ; bcd_7seg:bcd5|WideOr6~0                                                                        ; 1       ;
+; memory:memory|cache[0][15]~3                                                                   ; 1       ;
+; memory:memory|cache[1][15]~2                                                                   ; 1       ;
+; memory:memory|cache[2][15]~0                                                                   ; 1       ;
 ; memory:memory|memAddress[4]                                                                    ; 1       ;
 ; memory:memory|memAddress[3]                                                                    ; 1       ;
 ; memory:memory|memAddress[2]                                                                    ; 1       ;
 ; memory:memory|memAddress[1]                                                                    ; 1       ;
 ; memory:memory|memAddress[0]                                                                    ; 1       ;
-; memory:memory|cache[0][15]~3                                                                   ; 1       ;
-; memory:memory|cache[1][15]~2                                                                   ; 1       ;
-; memory:memory|cache[2][15]~0                                                                   ; 1       ;
+; memory:memory|outputData[7]~7                                                                  ; 1       ;
+; memory:memory|outputData[6]~6                                                                  ; 1       ;
+; memory:memory|outputData[5]~5                                                                  ; 1       ;
+; memory:memory|outputData[4]~4                                                                  ; 1       ;
+; memory:memory|outputData[3]~3                                                                  ; 1       ;
+; memory:memory|outputData[2]~2                                                                  ; 1       ;
+; memory:memory|outputData[1]~1                                                                  ; 1       ;
 +------------------------------------------------------------------------------------------------+---------+
 
 
@@ -2270,7 +2281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+-------------+----------------------+-----------------+-----------------+
 ; Name                                                                                               ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF     ; Location    ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
 +----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+-------------+----------------------+-----------------+-----------------+
-; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|ALTSYNCRAM ; M4K  ; Single Port ; Single Clock ; 32           ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 256  ; 32                          ; 8                           ; --                          ; --                          ; 256                 ; 1    ; mif.mif ; M4K_X13_Y13 ; Don't care           ; Don't care      ; Don't care      ;
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|ALTSYNCRAM ; M4K  ; Single Port ; Single Clock ; 32           ; 8            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 256  ; 32                          ; 8                           ; --                          ; --                          ; 256                 ; 1    ; mif.mif ; M4K_X13_Y14 ; Don't care           ; Don't care      ; Don't care      ;
 +----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+---------+-------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -2280,48 +2291,48 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 726 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 10 / 3,315 ( < 1 % )   ;
-; C4 interconnects            ; 324 / 60,840 ( < 1 % ) ;
-; Direct links                ; 150 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 763 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 11 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 441 / 60,840 ( < 1 % ) ;
+; Direct links                ; 125 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 246 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 40 / 3,091 ( 1 % )     ;
-; R4 interconnects            ; 490 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 239 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 44 / 3,091 ( 1 % )     ;
+; R4 interconnects            ; 479 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.69) ; Number of LABs  (Total = 32) ;
+; Number of Logic Elements  (Average = 13.35) ; Number of LABs  (Total = 31) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
-; 2                                           ; 2                            ;
-; 3                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 2                            ;
 ; 4                                           ; 1                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 1                            ;
+; 6                                           ; 0                            ;
 ; 7                                           ; 3                            ;
-; 8                                           ; 1                            ;
+; 8                                           ; 2                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 1                            ;
-; 14                                          ; 1                            ;
-; 15                                          ; 3                            ;
-; 16                                          ; 18                           ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 22                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.31) ; Number of LABs  (Total = 32) ;
+; LAB-wide Signals  (Average = 1.29) ; Number of LABs  (Total = 31) ;
 +------------------------------------+------------------------------+
-; 1 Clock                            ; 23                           ;
-; 1 Clock enable                     ; 11                           ;
+; 1 Clock                            ; 24                           ;
+; 1 Clock enable                     ; 8                            ;
 ; 1 Sync. load                       ; 3                            ;
 ; 2 Clock enables                    ; 5                            ;
 +------------------------------------+------------------------------+
@@ -2330,13 +2341,13 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.97) ; Number of LABs  (Total = 32) ;
+; Number of Signals Sourced  (Average = 16.74) ; Number of LABs  (Total = 31) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 2                            ;
+; 2                                            ; 0                            ;
 ; 3                                            ; 1                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 1                            ;
 ; 7                                            ; 3                            ;
@@ -2347,88 +2358,89 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 3                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 2                            ;
 ; 17                                           ; 3                            ;
-; 18                                           ; 3                            ;
-; 19                                           ; 3                            ;
+; 18                                           ; 2                            ;
+; 19                                           ; 4                            ;
 ; 20                                           ; 2                            ;
-; 21                                           ; 1                            ;
+; 21                                           ; 3                            ;
 ; 22                                           ; 3                            ;
-; 23                                           ; 0                            ;
+; 23                                           ; 2                            ;
 ; 24                                           ; 0                            ;
-; 25                                           ; 2                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 1                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
-; 29                                           ; 1                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 8.94) ; Number of LABs  (Total = 32) ;
+; Number of Signals Sourced Out  (Average = 9.39) ; Number of LABs  (Total = 31) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
 ; 1                                               ; 0                            ;
-; 2                                               ; 4                            ;
-; 3                                               ; 0                            ;
-; 4                                               ; 0                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 2                            ;
+; 4                                               ; 2                            ;
 ; 5                                               ; 1                            ;
-; 6                                               ; 1                            ;
-; 7                                               ; 6                            ;
-; 8                                               ; 4                            ;
+; 6                                               ; 2                            ;
+; 7                                               ; 4                            ;
+; 8                                               ; 1                            ;
 ; 9                                               ; 2                            ;
-; 10                                              ; 4                            ;
-; 11                                              ; 3                            ;
+; 10                                              ; 6                            ;
+; 11                                              ; 4                            ;
 ; 12                                              ; 2                            ;
 ; 13                                              ; 0                            ;
-; 14                                              ; 1                            ;
-; 15                                              ; 3                            ;
+; 14                                              ; 2                            ;
+; 15                                              ; 1                            ;
 ; 16                                              ; 0                            ;
-; 17                                              ; 0                            ;
-; 18                                              ; 0                            ;
-; 19                                              ; 1                            ;
+; 17                                              ; 1                            ;
+; 18                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 18.72) ; Number of LABs  (Total = 32) ;
+; Number of Distinct Inputs  (Average = 20.81) ; Number of LABs  (Total = 31) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 3                            ;
-; 5                                            ; 0                            ;
+; 4                                            ; 5                            ;
+; 5                                            ; 1                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 3                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
-; 15                                           ; 1                            ;
-; 16                                           ; 5                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
 ; 19                                           ; 0                            ;
-; 20                                           ; 3                            ;
+; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
-; 22                                           ; 2                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 2                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 3                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 0                            ;
+; 24                                           ; 3                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 2                            ;
+; 27                                           ; 4                            ;
 ; 28                                           ; 2                            ;
 ; 29                                           ; 2                            ;
-; 30                                           ; 2                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 4                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2845,11 +2857,11 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X11_Y12 to location X21_Y23
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X11_Y12 to location X21_Y23
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.34 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 57 output pins without output pin load capacitance assignment
     Info (306007): Pin "HEX0[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -2916,17 +2928,17 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/Aluno/Documents/laoc2-pratica1/output_files/pratica1.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/aluno/laoc2-pratica1/output_files/pratica1.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 357 warnings
-    Info: Peak virtual memory: 811 megabytes
-    Info: Processing ended: Fri Apr 06 16:31:46 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 669 megabytes
+    Info: Processing ended: Fri Apr 06 17:02:24 2018
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Aluno/Documents/laoc2-pratica1/output_files/pratica1.fit.smsg.
+The suppressed messages can be found in C:/Users/aluno/laoc2-pratica1/output_files/pratica1.fit.smsg.
 
 
