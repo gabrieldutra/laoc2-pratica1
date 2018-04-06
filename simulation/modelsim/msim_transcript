@@ -10,31 +10,50 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/ramlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/ramlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ramlpm
 # 
 # Top level modules:
 # 	ramlpm
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/pratica1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/pratica1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module pratica1
 # 
 # Top level modules:
 # 	pratica1
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/bcd_7seg.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/bcd_7seg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bcd_7seg
 # 
 # Top level modules:
 # 	bcd_7seg
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/memory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/memory.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
 # 
+vsim +altera -L alter_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory
+# vsim +altera -L alter_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory 
+# Loading work.memory
+# ** Error: (vsim-19) Failed to access library 'alter_mf_ver' at "alter_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.ramlpm
+# ** Error: (vsim-19) Failed to access library 'alter_mf_ver' at "alter_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) C:/Users/Aluno/Documents/laoc2-pratica1/ramlpm.v(85): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /memory/ram
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'alter_mf_ver' at "alter_mf_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             C:/Users/Aluno/Documents/laoc2-pratica1/simulation/modelsim/rtl_work
+# Error loading design
 vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory
 # vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory 
 # Loading work.memory
@@ -50,33 +69,33 @@ vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_trans
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/ramlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/ramlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ramlpm
 # 
 # Top level modules:
 # 	ramlpm
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/pratica1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/pratica1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module pratica1
 # 
 # Top level modules:
 # 	pratica1
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/bcd_7seg.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/bcd_7seg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bcd_7seg
 # 
 # Top level modules:
 # 	bcd_7seg
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/memory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Aluno/Documents/laoc2-pratica1 {C:/Users/Aluno/Documents/laoc2-pratica1/memory.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module memory
 # 
 # Top level modules:
 # 	memory
 # 
-wave create -driver freeze -pattern constant -value 00001 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memory/address
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/clock
+wave create -driver freeze -pattern constant -value 00101 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memory/address
+wave create -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/clock
 wave create -driver freeze -pattern constant -value 10101010 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memory/data
 wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/wren
 add wave -position end  sim:/memory/q
@@ -84,11 +103,11 @@ add wave -position end  sim:/memory/q
 # 
 #           File in use by: aluno  Hostname: NTIC-LAB-XYX  ProcessID: 7712
 # 
-#           Attempting to use alternate WLF file "./wlftwymcsa".
+#           Attempting to use alternate WLF file "./wlftttarca".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftwymcsa
+#           Using alternate file: ./wlftttarca
 # 
-add wave -position 4  sim:/memory/valid
+add wave -position end  sim:/memory/valid
 add wave -position end  sim:/memory/cache
 run -all

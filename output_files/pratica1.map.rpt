@@ -1,6 +1,6 @@
 Analysis & Synthesis report for pratica1
-Fri Apr 06 16:42:54 2018
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Apr 06 16:31:33 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -13,17 +13,18 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis IP Cores Summary
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated
- 13. Parameter Settings for User Entity Instance: memory:memory|ramlpm:ram|altsyncram:altsyncram_component
- 14. altsyncram Parameter Settings by Entity Instance
- 15. Port Connectivity Checks: "memory:memory|ramlpm:ram"
- 16. Port Connectivity Checks: "bcd_7seg:bcd2"
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. Analysis & Synthesis IP Cores Summary
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated
+ 15. Parameter Settings for User Entity Instance: memory:memory|ramlpm:ram|altsyncram:altsyncram_component
+ 16. altsyncram Parameter Settings by Entity Instance
+ 17. Port Connectivity Checks: "bcd_7seg:bcd2"
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -49,18 +50,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 06 16:42:54 2018           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 06 16:31:33 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica1                                        ;
 ; Top-level Entity Name              ; pratica1                                        ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 94                                              ;
-;     Total combinational functions  ; 94                                              ;
-;     Dedicated logic registers      ; 39                                              ;
-; Total registers                    ; 39                                              ;
+; Total logic elements               ; 417                                             ;
+;     Total combinational functions  ; 396                                             ;
+;     Dedicated logic registers      ; 106                                             ;
+; Total registers                    ; 106                                             ;
 ; Total pins                         ; 75                                              ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
+; Total memory bits                  ; 256                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -167,11 +168,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                            ; Library ;
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------+---------+
-; ramlpm.v                         ; yes             ; User Wizard-Generated File       ; E:/laoc2-pratica1/ramlpm.v                                              ;         ;
-; pratica1.v                       ; yes             ; User Verilog HDL File            ; E:/laoc2-pratica1/pratica1.v                                            ;         ;
-; bcd_7seg.v                       ; yes             ; User Verilog HDL File            ; E:/laoc2-pratica1/bcd_7seg.v                                            ;         ;
-; mif.mif                          ; yes             ; User Memory Initialization File  ; E:/laoc2-pratica1/mif.mif                                               ;         ;
-; memory.v                         ; yes             ; User Verilog HDL File            ; E:/laoc2-pratica1/memory.v                                              ;         ;
+; ramlpm.v                         ; yes             ; User Wizard-Generated File       ; C:/Users/Aluno/Documents/laoc2-pratica1/ramlpm.v                        ;         ;
+; pratica1.v                       ; yes             ; User Verilog HDL File            ; C:/Users/Aluno/Documents/laoc2-pratica1/pratica1.v                      ;         ;
+; bcd_7seg.v                       ; yes             ; User Verilog HDL File            ; C:/Users/Aluno/Documents/laoc2-pratica1/bcd_7seg.v                      ;         ;
+; mif.mif                          ; yes             ; User Memory Initialization File  ; C:/Users/Aluno/Documents/laoc2-pratica1/mif.mif                         ;         ;
+; memory.v                         ; yes             ; User Verilog HDL File            ; C:/Users/Aluno/Documents/laoc2-pratica1/memory.v                        ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -181,7 +182,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_7de1.tdf           ; yes             ; Auto-Generated Megafunction      ; E:/laoc2-pratica1/db/altsyncram_7de1.tdf                                ;         ;
+; db/altsyncram_7de1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Aluno/Documents/laoc2-pratica1/db/altsyncram_7de1.tdf          ;         ;
 +----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------+---------+
 
 
@@ -190,54 +191,79 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 94    ;
+; Estimated Total logic elements              ; 417   ;
 ;                                             ;       ;
-; Total combinational functions               ; 94    ;
+; Total combinational functions               ; 396   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 59    ;
-;     -- 3 input functions                    ; 35    ;
-;     -- <=2 input functions                  ; 0     ;
+;     -- 4 input functions                    ; 296   ;
+;     -- 3 input functions                    ; 77    ;
+;     -- <=2 input functions                  ; 23    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 94    ;
+;     -- normal mode                          ; 396   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 39    ;
-;     -- Dedicated logic registers            ; 39    ;
+; Total registers                             ; 106   ;
+;     -- Dedicated logic registers            ; 106   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 75    ;
+; Total memory bits                           ; 256   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; SW[6] ;
-; Maximum fan-out                             ; 39    ;
-; Total fan-out                               ; 485   ;
-; Average fan-out                             ; 2.33  ;
+; Maximum fan-out                             ; 114   ;
+; Total fan-out                               ; 1868  ;
+; Average fan-out                             ; 3.19  ;
 +---------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                             ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
-; |pratica1                  ; 94 (0)            ; 39 (0)       ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |pratica1               ; work         ;
-;    |bcd_7seg:bcd3|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd3 ; work         ;
-;    |bcd_7seg:bcd4|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd4 ; work         ;
-;    |bcd_7seg:bcd5|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd5 ; work         ;
-;    |bcd_7seg:bcd6|         ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd6 ; work         ;
-;    |bcd_7seg:bcd|          ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd  ; work         ;
-;    |memory:memory|         ; 59 (59)           ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|memory:memory ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
+; |pratica1                                    ; 396 (0)           ; 106 (0)      ; 256         ; 0            ; 0       ; 0         ; 75   ; 0            ; |pratica1                                                                                         ; work         ;
+;    |bcd_7seg:bcd3|                           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd3                                                                           ; work         ;
+;    |bcd_7seg:bcd4|                           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd4                                                                           ; work         ;
+;    |bcd_7seg:bcd5|                           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd5                                                                           ; work         ;
+;    |bcd_7seg:bcd6|                           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd6                                                                           ; work         ;
+;    |bcd_7seg:bcd|                            ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|bcd_7seg:bcd                                                                            ; work         ;
+;    |memory:memory|                           ; 361 (361)         ; 106 (106)    ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|memory:memory                                                                           ; work         ;
+;       |ramlpm:ram|                           ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|memory:memory|ramlpm:ram                                                                ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component                                ; work         ;
+;             |altsyncram_7de1:auto_generated| ; 0 (0)             ; 0 (0)        ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |pratica1|memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                           ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+----------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                    ; IP Include File            ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+----------------------------+
-; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |pratica1|memory:memory|ramlpm:ram ; E:/laoc2-pratica1/ramlpm.v ;
-+--------+--------------+---------+--------------+--------------+------------------------------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                     ;
++----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+; Name                                                                                               ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF     ;
++----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+; memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|ALTSYNCRAM ; M4K  ; Single Port ; 32           ; 8            ; --           ; --           ; 256  ; mif.mif ;
++----------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                 ;
++--------+--------------+---------+--------------+--------------+------------------------------------+--------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                    ; IP Include File                                  ;
++--------+--------------+---------+--------------+--------------+------------------------------------+--------------------------------------------------+
+; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |pratica1|memory:memory|ramlpm:ram ; C:/Users/Aluno/Documents/laoc2-pratica1/ramlpm.v ;
++--------+--------------+---------+--------------+--------------+------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; memory:memory|cache[3][16]            ; Stuck at VCC due to stuck port data_in ;
+; memory:memory|cache[0][16]            ; Stuck at VCC due to stuck port data_in ;
+; memory:memory|cache[1][16]            ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -245,28 +271,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 39    ;
+; Total registers                              ; 106   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Synchronous Load   ; 9     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 73    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; memory:memory|cache[3][0]              ; 2       ;
-; memory:memory|cache[0][0]              ; 2       ;
-; memory:memory|cache[1][0]              ; 2       ;
-; memory:memory|cache[3][1]              ; 2       ;
-; memory:memory|cache[0][2]              ; 2       ;
-; Total number of inverted registers = 5 ;         ;
-+----------------------------------------+---------+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; memory:memory|cache[1][0]               ; 3       ;
+; memory:memory|cache[3][0]               ; 2       ;
+; memory:memory|cache[1][9]               ; 3       ;
+; memory:memory|cache[3][8]               ; 3       ;
+; memory:memory|cache[2][8]               ; 2       ;
+; memory:memory|cache[2][10]              ; 2       ;
+; memory:memory|cache[2][0]               ; 2       ;
+; memory:memory|cache[0][0]               ; 2       ;
+; memory:memory|cache[3][1]               ; 2       ;
+; memory:memory|cache[2][2]               ; 2       ;
+; memory:memory|cache[0][2]               ; 2       ;
+; memory:memory|cache[3][14]              ; 3       ;
+; memory:memory|cache[1][13]              ; 4       ;
+; memory:memory|cache[2][14]              ; 3       ;
+; memory:memory|cache[2][13]              ; 4       ;
+; Total number of inverted registers = 15 ;         ;
++-----------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -274,7 +310,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |pratica1|memory:memory|outputData[3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |pratica1|memory:memory|memCount[0]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |pratica1|memory:memory|cache[3][9]   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |pratica1|memory:memory|cache[2][9]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |pratica1|memory:memory|cache[1][10]  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |pratica1|memory:memory|cache[0][8]   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |pratica1|memory:memory|memData[3]    ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 15 LEs               ; 5 LEs                  ; Yes        ; |pratica1|memory:memory|memAddress[0] ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |pratica1|memory:memory|outputData[2] ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |pratica1|memory:memory|cache[0][14]  ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |pratica1|memory:memory|cache[3][2]   ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |pratica1|memory:memory|cache[2][3]   ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 14 LEs               ; 21 LEs                 ; Yes        ; |pratica1|memory:memory|cache[1][6]   ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 12 LEs               ; 18 LEs                 ; Yes        ; |pratica1|memory:memory|cache[0][1]   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |pratica1|memory:memory|cache[2][8]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |pratica1|memory:memory|cache[2][14]  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pratica1|memory:memory|cache[3][1]   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pratica1|memory:memory|cache[2][0]   ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |pratica1|memory:memory|cache[0][0]   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pratica1|memory:memory|Mux15         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pratica1|memory:memory|Mux18         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |pratica1|memory:memory|cache         ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |pratica1|memory:memory|writeAddress  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------+
 
 
@@ -368,15 +436,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memory:memory|ramlpm:ram"                                                           ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "bcd_7seg:bcd2"                                                                                                                             ;
 +------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
@@ -391,7 +450,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -399,9 +458,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Apr 06 16:42:52 2018
+    Info: Processing started: Fri Apr 06 16:31:29 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica1 -c pratica1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file ramlpm.v
@@ -418,8 +477,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file memory.
 Info (12127): Elaborating entity "pratica1" for the top level hierarchy
 Info (12128): Elaborating entity "bcd_7seg" for hierarchy "bcd_7seg:bcd"
 Info (12128): Elaborating entity "memory" for hierarchy "memory:memory"
-Warning (10036): Verilog HDL or VHDL warning at memory.v(36): object "count" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at memory.v(31): truncated value with size 8 to match size of target (5)
+Warning (10036): Verilog HDL or VHDL warning at memory.v(37): object "count" assigned a value but never read
 Info (12128): Elaborating entity "ramlpm" for hierarchy "memory:memory|ramlpm:ram"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "memory:memory|ramlpm:ram|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "memory:memory|ramlpm:ram|altsyncram:altsyncram_component"
@@ -442,16 +500,6 @@ Info (12133): Instantiated megafunction "memory:memory|ramlpm:ram|altsyncram:alt
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7de1.tdf
     Info (12023): Found entity 1: altsyncram_7de1
 Info (12128): Elaborating entity "altsyncram_7de1" for hierarchy "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated"
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[0]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[1]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[2]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[3]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[4]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[5]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[6]"
-        Warning (14320): Synthesized away node "memory:memory|ramlpm:ram|altsyncram:altsyncram_component|altsyncram_7de1:auto_generated|q_a[7]"
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX2[6]" is stuck at VCC
@@ -475,14 +523,15 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]"
     Warning (15610): No output dependent on input pin "SW[8]"
     Warning (15610): No output dependent on input pin "SW[9]"
-Info (21057): Implemented 172 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 518 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 57 output pins
-    Info (21061): Implemented 97 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 404 megabytes
-    Info: Processing ended: Fri Apr 06 16:42:54 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 435 logic cells
+    Info (21064): Implemented 8 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 550 megabytes
+    Info: Processing ended: Fri Apr 06 16:31:33 2018
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
