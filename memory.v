@@ -168,13 +168,16 @@ module memory (
 								cache[writeAddress][7:0] = currentData;
 								outputData = currentData;
 								outputValid = 1;
-								// Update LRU
-								if (cache[writeAddress][14:13] > cache[1][14:13]) 
-									cache[1][14:13] = cache[1][14:13] + 2'b01;
-								if (cache[writeAddress][14:13] > cache[2][14:13]) 
-									cache[2][14:13] = cache[2][14:13] + 2'b01;
-								if (cache[writeAddress][14:13] > cache[0][14:13]) 
+								// Update LRU								
+								if (writeAddress != 2'b00) 
 									cache[0][14:13] = cache[0][14:13] + 2'b01;
+								if (writeAddress != 2'b01) 
+									cache[1][14:13] = cache[1][14:13] + 2'b01;
+								if (writeAddress != 2'b10) 
+									cache[2][14:13] = cache[2][14:13] + 2'b01;
+								if (writeAddress != 2'b11) 
+									cache[3][14:13] = cache[3][14:13] + 2'b01;
+
 								cache[writeAddress][14:13] = 2'b00;
 							end
 							else begin // Leitura no caso de miss
@@ -186,13 +189,16 @@ module memory (
 										cache[writeAddress][7:0] = memOutput;
 										outputData = memOutput;
 										outputValid = 1;
-										// Update LRU
-										if (cache[writeAddress][14:13] > cache[1][14:13]) 
-											cache[1][14:13] = cache[1][14:13] + 2'b01;
-										if (cache[writeAddress][14:13] > cache[2][14:13]) 
-											cache[2][14:13] = cache[2][14:13] + 2'b01;
-										if (cache[writeAddress][14:13] > cache[0][14:13]) 
+										// Update LRU								
+										if (writeAddress != 2'b00) 
 											cache[0][14:13] = cache[0][14:13] + 2'b01;
+										if (writeAddress != 2'b01) 
+											cache[1][14:13] = cache[1][14:13] + 2'b01;
+										if (writeAddress != 2'b10) 
+											cache[2][14:13] = cache[2][14:13] + 2'b01;
+										if (writeAddress != 2'b11) 
+											cache[3][14:13] = cache[3][14:13] + 2'b01;
+											
 										cache[writeAddress][14:13] = 2'b00;
 									end
 								memAddress = currentAddress;

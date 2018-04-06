@@ -19,17 +19,17 @@ Z5 !s92 -vlog01compat -work work +incdir+C:/Users/aluno/laoc2-pratica1 -O0
 !i10b 1
 !s100 9?k@:>4PVITBEjgZ0<>UB3
 !s85 0
-!s108 1523045062.740000
+!s108 1523047890.277000
 !s107 C:/Users/aluno/laoc2-pratica1/bcd_7seg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/bcd_7seg.v|
 !s101 -O0
 vmemory
 !i10b 1
-!s100 BE03P?]TOm6eH>kUUQjLC0
-ICidCY3hKz0H`BMAfa^R7e1
+!s100 fK[Eok1E2bGc`]XnT7FYL3
+IzC4hbaW4aMJFL@9R:@VCn0
 Vef2nkb@h:J4^HgVV3zR;72
 R1
-w1523044891
+w1523047804
 8C:/Users/aluno/laoc2-pratica1/memory.v
 FC:/Users/aluno/laoc2-pratica1/memory.v
 L0 1
@@ -37,7 +37,7 @@ R3
 r1
 !s85 0
 31
-!s108 1523045062.868000
+!s108 1523047890.447000
 !s107 C:/Users/aluno/laoc2-pratica1/memory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/memory.v|
 !s101 -O0
@@ -59,7 +59,7 @@ R5
 !i10b 1
 !s100 K^z6GBPSD<2Ikf7nKiQH=1
 !s85 0
-!s108 1523045062.610000
+!s108 1523047890.137000
 !s107 C:/Users/aluno/laoc2-pratica1/pratica1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/pratica1.v|
 !s101 -O0
@@ -79,7 +79,7 @@ R5
 !i10b 1
 !s100 LYnCL9^<encERV7nih3dK3
 !s85 0
-!s108 1523045062.486000
+!s108 1523047889.988000
 !s107 C:/Users/aluno/laoc2-pratica1/ramlpm.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/laoc2-pratica1|C:/Users/aluno/laoc2-pratica1/ramlpm.v|
 !s101 -O0

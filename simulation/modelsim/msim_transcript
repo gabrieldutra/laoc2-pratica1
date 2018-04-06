@@ -75,7 +75,7 @@ vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_trans
 # Top level modules:
 # 	memory
 # 
-wave create -driver freeze -pattern constant -value 01000 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memory/address
+wave create -driver freeze -pattern constant -value 00101 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memory/address
 wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/clock
 wave create -driver freeze -pattern constant -value 10101010 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memory/data
 wave create -driver freeze -pattern clock -initialvalue 0 -period 1000ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/wren
@@ -84,15 +84,23 @@ add wave -position end  sim:/memory/q
 # 
 #           File in use by: aluno  Hostname: NTIC-LAB-XYX  ProcessID: 7712
 # 
-#           Attempting to use alternate WLF file "./wlft4e0z3w".
+#           Attempting to use alternate WLF file "./wlftvvbsxw".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft4e0z3w
+#           Using alternate file: ./wlftvvbsxw
 # 
 add wave -position end  sim:/memory/valid
 add wave -position end  sim:/memory/memAddress
 add wave -position end  sim:/memory/memData
-add wave -position end  sim:/memory/memCount
+add wave -position end  sim:/memory/memWren
 add wave -position end  sim:/memory/memOutput
+add wave -position 9  sim:/memory/memCount
 add wave -position end  sim:/memory/cache
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/memory/clock
+run -all
+wave modify -driver freeze -pattern counter -startvalue 00000 -endvalue 11111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 4 0 -starttime 0ps -endtime 1000ps Edit:/memory/address
+wave modify -driver freeze -pattern counter -startvalue 00000 -endvalue 11111 -type Range -direction Up -period 100ps -step 1 -repeat forever -range 4 0 -starttime 10ps -endtime 1010ps Edit:/memory/address
+restart
+# Loading work.memory
+# Loading work.ramlpm
 run -all
