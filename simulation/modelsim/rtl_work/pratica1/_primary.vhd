@@ -10,6 +10,7 @@ entity pratica1 is
         HEX4            : out    vl_logic_vector(0 to 6);
         HEX5            : out    vl_logic_vector(0 to 6);
         HEX6            : out    vl_logic_vector(0 to 6);
-        HEX7            : out    vl_logic_vector(0 to 6)
+        HEX7            : out    vl_logic_vector(0 to 6);
+        LEDR            : out    vl_logic_vector(0 downto 0)
     );
 end pratica1;

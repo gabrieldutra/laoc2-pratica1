@@ -1,33 +1,132 @@
-# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
 # do pratica1_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
-# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/ramlpm.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module ramlpm
 # 
 # Top level modules:
 # 	ramlpm
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/pratica1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/pratica1.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module pratica1
 # 
 # Top level modules:
 # 	pratica1
-# vlog -vlog01compat -work work +incdir+E:/laoc2-pratica1 {E:/laoc2-pratica1/bcd_7seg.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bcd_7seg
 # 
 # Top level modules:
 # 	bcd_7seg
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/cache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cache
 # 
-# ** Note: (vish-4074) File E:/laoc2-pratica1/simulation/modelsim/vsim.wlf is still open, viewing file in live viewing mode.
+# Top level modules:
+# 	cache
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
 # 
+# Top level modules:
+# 	memory
+# 
+# Load canceled
+vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory
+# vsim +altera -L altera_mf_ver -do pratica1_run_msim_rtl_verilog.do -l msim_transcript -gui work.memory 
+# Loading work.memory
+# Loading work.cache
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ramlpm
+# ** Warning: (vsim-3015) C:/Users/aluno/Documents/laoc2-pratica1/memory.v(71): [PCDPC] - Port size (17 or 17) does not match connection size (8) for port 'data'. The port definition is at: C:/Users/aluno/Documents/laoc2-pratica1/cache.v(42).
+# 
+#         Region: /memory/cache
+# do pratica1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramlpm
+# 
+# Top level modules:
+# 	ramlpm
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/pratica1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica1
+# 
+# Top level modules:
+# 	pratica1
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_7seg
+# 
+# Top level modules:
+# 	bcd_7seg
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/cache.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cache
+# 
+# Top level modules:
+# 	cache
+# vlog -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 {C:/Users/aluno/Documents/laoc2-pratica1/memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+# 
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/memory/clock
+wave create -driver freeze -pattern constant -value 00000000 -range 7 0 -starttime 0ps -endtime 1000ps sim:/memory/data
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 1000ps sim:/memory/wren
+add wave -position end  sim:/memory/q
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: aluno  Hostname: NTIC-LAB-XYX  ProcessID: 7712
+# 
+#           Attempting to use alternate WLF file "./wlft90fa5n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft90fa5n
+# 
+add wave -position end  sim:/memory/valid
+run -all
+add wave -position 3  sim:/memory/address
+wave create -driver freeze -pattern constant -value 00100 -range 4 0 -starttime 0ps -endtime 1000ps sim:/memory/address
+add wave -position 2 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/memory/address
+restart
+# Loading work.memory
+# Loading work.cache
+# Loading work.ramlpm
+# ** Warning: (vsim-3015) C:/Users/aluno/Documents/laoc2-pratica1/memory.v(71): [PCDPC] - Port size (17 or 17) does not match connection size (8) for port 'data'. The port definition is at: C:/Users/aluno/Documents/laoc2-pratica1/cache.v(42).
+# 
+#         Region: /memory/cache
+run -all
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/memory/clock
+restart
+# ** Warning: (vsim-3015) C:/Users/aluno/Documents/laoc2-pratica1/memory.v(71): [PCDPC] - Port size (17 or 17) does not match connection size (8) for port 'data'. The port definition is at: C:/Users/aluno/Documents/laoc2-pratica1/cache.v(42).
+# 
+#         Region: /memory/cache
+run -all
+wave modify -driver freeze -pattern clock -initialvalue 1 -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps Edit:/memory/clock
+restart
+# ** Warning: (vsim-3015) C:/Users/aluno/Documents/laoc2-pratica1/memory.v(71): [PCDPC] - Port size (17 or 17) does not match connection size (8) for port 'data'. The port definition is at: C:/Users/aluno/Documents/laoc2-pratica1/cache.v(42).
+# 
+#         Region: /memory/cache
+run -all

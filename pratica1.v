@@ -1,4 +1,4 @@
-	module pratica1(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7);
+	module pratica1(SW, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7, LEDR);
 		input [17:0] SW;
 		output [0:6] HEX0;
 		output [0:6] HEX1;
@@ -8,6 +8,7 @@
 		output [0:6] HEX5;
 		output [0:6] HEX6;
 		output [0:6] HEX7;
+		output [0:0] LEDR;
 		
 		// Wires
 		wire [4:0] address;
@@ -15,6 +16,7 @@
 		wire [7:0] data;
 		wire wren;
 		wire [7:0] q;
+		wire valid;
 		
 		// Assign for the memory
 		assign address = SW[4:0];
@@ -42,6 +44,9 @@
 		assign HEX6 = display7;
 		assign HEX7 = display8;
 		
+		// Led assign
+		assign LEDR[0] = valid;
+		
 		// Address display
 		bcd_7seg bcd(address[3:0], display7[0:6]); // Least significant bits as hex
 		bcd_7seg bcd2(address[4:4], display8[0:6]); // Most significant bit
@@ -57,7 +62,7 @@
 		bcd_7seg bcd4(data[7:4], display6[0:6]); // MSB
 		
 		// Memory
-		ramlpm ram(address, clock, data, wren, q);
+		memory memory(address, clock, data, wren, q, valid);
 		bcd_7seg bcd5(q[3:0], display1[0:6]);
 		bcd_7seg bcd6(q[7:4], display2[0:6]);
 		

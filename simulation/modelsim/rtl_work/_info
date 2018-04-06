@@ -2,64 +2,104 @@ m255
 K3
 13
 cModel Technology
-Z0 dE:\laoc2-pratica1\simulation\modelsim
+Z0 dC:\Users\aluno\Documents\laoc2-pratica1\simulation\modelsim
 vbcd_7seg
-!i10b 1
-!s100 R^OLfX9lT]iJ3G<FSAO@H3
-I4Ab4PaQ6UoNH0mOL1V`YE1
+Il9JaD[CCI[]gTGjlHT0nO0
 VR>`DTFlnd=5J_^18KkNc[2
-Z1 dE:\laoc2-pratica1\simulation\modelsim
-w1521215523
-8E:/laoc2-pratica1/bcd_7seg.v
-FE:/laoc2-pratica1/bcd_7seg.v
+Z1 dC:\Users\aluno\Documents\laoc2-pratica1\simulation\modelsim
+Z2 w1523023175
+8C:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v
+FC:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v
 L0 21
-Z2 OV;L;10.1d;51
-r1
-!s85 0
-31
-!s108 1521821627.194000
-!s107 E:/laoc2-pratica1/bcd_7seg.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/laoc2-pratica1|E:/laoc2-pratica1/bcd_7seg.v|
-!s101 -O0
-Z3 o-vlog01compat -work work -O0
-Z4 !s92 -vlog01compat -work work +incdir+E:/laoc2-pratica1 -O0
-vpratica1
-I=EVN?JRG4`^nn=C6UoSC@1
-VEfU<E6kZS0MThj0cgNLU?0
-R1
-w1521821547
-8E:/laoc2-pratica1/pratica1.v
-FE:/laoc2-pratica1/pratica1.v
-L0 1
-R2
+Z3 OV;L;10.1d;51
 r1
 31
-R3
-R4
+Z4 o-vlog01compat -work work -O0
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/aluno/Documents/laoc2-pratica1 -O0
 !i10b 1
-!s100 KGKldj^0YTiBk6j^C7=>]2
+!s100 [:aQoJUlP:>2c8XWoVEVX3
 !s85 0
-!s108 1521821627.069000
-!s107 E:/laoc2-pratica1/pratica1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/laoc2-pratica1|E:/laoc2-pratica1/pratica1.v|
+!s108 1523029319.872000
+!s107 C:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/Documents/laoc2-pratica1|C:/Users/aluno/Documents/laoc2-pratica1/bcd_7seg.v|
+!s101 -O0
+vcache
+IDD:hQ^lj??ITLnzdVEm>f2
+V3eQFcJPB8QPEWaAPa9_N53
+R1
+w1523028182
+8C:/Users/aluno/Documents/laoc2-pratica1/cache.v
+FC:/Users/aluno/Documents/laoc2-pratica1/cache.v
+L0 39
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 :];KaWgIW<KK:;oIBfCE21
+!s85 0
+!s108 1523029320.014000
+!s107 C:/Users/aluno/Documents/laoc2-pratica1/cache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/Documents/laoc2-pratica1|C:/Users/aluno/Documents/laoc2-pratica1/cache.v|
+!s101 -O0
+vmemory
+!i10b 1
+!s100 4:7;^7FEEA5lWk4AoNTjW0
+IcVm1I>mIYhm4DFG9BZAze1
+Vef2nkb@h:J4^HgVV3zR;72
+R1
+w1523029200
+8C:/Users/aluno/Documents/laoc2-pratica1/memory.v
+FC:/Users/aluno/Documents/laoc2-pratica1/memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1523029320.173000
+!s107 C:/Users/aluno/Documents/laoc2-pratica1/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/Documents/laoc2-pratica1|C:/Users/aluno/Documents/laoc2-pratica1/memory.v|
+!s101 -O0
+R4
+R5
+vpratica1
+I?]9Q[Oz?g0?eFR2a_<Bd[3
+Vzz8EfJ:D0OWZWQon]3_4j1
+R1
+w1523028121
+8C:/Users/aluno/Documents/laoc2-pratica1/pratica1.v
+FC:/Users/aluno/Documents/laoc2-pratica1/pratica1.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 YN:Wj10F?VYH3CM3L9JB]2
+!s85 0
+!s108 1523029319.731000
+!s107 C:/Users/aluno/Documents/laoc2-pratica1/pratica1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/Documents/laoc2-pratica1|C:/Users/aluno/Documents/laoc2-pratica1/pratica1.v|
 !s101 -O0
 vramlpm
-IcP@:lA?nK_nbYS:l=;7eL2
+IMb1<45AhSj1PXW?k5IASj2
 VR:=61PRUnAZWihg=S@JO<2
 R1
-w1521818131
-8E:/laoc2-pratica1/ramlpm.v
-FE:/laoc2-pratica1/ramlpm.v
-L0 39
 R2
+8C:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v
+FC:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v
+L0 39
+R3
 r1
 31
-R3
 R4
+R5
 !i10b 1
-!s100 cC[2oT3mQYOK43ZdD^iO12
+!s100 ]Q7U8mj2ciz5PJ7KW^TA20
 !s85 0
-!s108 1521821626.725000
-!s107 E:/laoc2-pratica1/ramlpm.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/laoc2-pratica1|E:/laoc2-pratica1/ramlpm.v|
+!s108 1523029319.594000
+!s107 C:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/aluno/Documents/laoc2-pratica1|C:/Users/aluno/Documents/laoc2-pratica1/ramlpm.v|
 !s101 -O0
